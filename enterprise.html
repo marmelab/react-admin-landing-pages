@@ -6,8 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Enterprise Edition</title>
 		
-		<script type="module" crossorigin src="./assets/enterprise-a18eb242.js"></script>
-		<link rel="stylesheet" href="./assets/main-7ffb5eb4.css">
+		<link rel="stylesheet" href="./assets/main-0439048a.css">
 	</head>
 	<body>
 		<section class="bg-[#00023b] text-white">
@@ -38,10 +37,10 @@
 		</section>
 		<section class="bg-[#00023b] text-white">
 			<div
-				class="mx-auto max-w-[1440px] bg-[url('/ee_bg.png')] bg-bottom bg-no-repeat px-16 pt-7"
+				class="mx-auto max-w-[1440px] bg-[url('/bg-hero-ee.svg')] bg-bottom bg-no-repeat px-16 pt-8"
 			>
 				<div class="text-center">
-					<h1 class="text-[64px] font-bold leading-[72px]">
+					<h1 class="text-[60px] font-bold leading-[64px]">
 						React-admin<br />
 						Enterprise Edition
 					</h1>
@@ -68,36 +67,40 @@
 				</div>
 				<div class="relative mt-8 flex justify-center text-white">
 					<pre
-						class="absolute top-[26%] left-[10%] rounded-md border bg-[#00023b] p-2 text-[14px] font-normal leading-[20px]"
+						class="absolute top-[41%] left-[11%] rounded-md border bg-[#00023b] p-4 text-[12px] font-normal leading-[16px] text-[#00b3da]"
 					><code
-						><span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
-<span class="text-[#00b3da]">import</span> {
-  Admin,
-  Resource,
-  ListGuesser
-} <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;</code
+						><span class="text-[#ffa939]">const</span> MyAppbar <span class="text-[#1bceb9]">=</span> <span class="text-white">()</span> <span class="text-[#1bceb9]">=&gt;</span> <span class="text-white">(</span>
+	<span class="text-[#1bceb9]">&lt;</span>AppBar<span class="text-[#1bceb9]">&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>Logo <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>Typography variant="h6" id="title" <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>Search <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>ToggleThemeButton darkTheme={<span class="text-[#9870b7]">darkTheme</span>}
+			lightTheme={<span class="text-[#9870b7]">lightTheme</span>} <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>LocalesMenuButton languages={<span class="text-[#9870b7]">languages</span>} <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>RefreshIconButton <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>CustomUserMenu <span class="text-[#1bceb9]">/&gt;</span>
+	<span class="text-[#1bceb9]">&lt;/</span>AppBar<span class="text-[#1bceb9]">&gt;</span>
+<span class="text-white">);</span></code
 					></pre>
 					<pre
-						class="absolute left-[51%] top-[22%] rounded-md border bg-[#00023b] bg-[url('/arrow_1.svg')] bg-[left_7rem_bottom_1rem] bg-no-repeat p-2 pr-24 pb-20 text-[14px] font-normal leading-[20px]"
+						class="absolute top-[0%] left-[57%] rounded-md border bg-[#00023b] p-4 pr-8 text-[12px] font-normal leading-[16px]"
 					><code
-							><span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
-<span class="text-[#00b3da]">import</span> {
-  Admin,
-  Resource,
-  ListGuesser
-} <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;</code
+							><span class="text-[#ffa939]">const</span> <span class="text-[#00b3da]">roles</span> = {
+	editor: [
+		{ <span class="text-[#9870b7]">action</span>: <span class="text-[#00b3da]">'*'</span>, <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'products'</span> },
+		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'read'</span>, <span class="text-[#00b3da]">'write'</span>],
+			<span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'products.*'</span> },
+		{ <span class="text-[#9870b7]">action</span>: <span class="text-[#00b3da]">'list'</span>, <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'categories'</span> },
+	],
+	moderator: [
+		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'list'</span>], <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'customers'</span> },
+		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'list'</span>, <span class="text-[#00b3da]">'edit'</span>],
+			<span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'reviews'</span> },
+	],    
+};</code
 						></pre>
-					<pre
-						class="absolute top-[58%] left-[65%] rounded-md border bg-[#00023b] p-2 pr-8 text-[14px] font-normal leading-[20px]"
-					><code
-							><span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
-<span class="text-[#00b3da]">import</span> {
-  Admin,
-  Resource,
-  ListGuesser
-} <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;</code
-						></pre>
-					<img src="./screen_ee.png" />
+					<!-- <img src="/screen_ee.png" /> -->
+					<img src="./Screen_ee.png" class="mt-14" />
 				</div>
 			</div>
 		</section>
@@ -944,12 +947,8 @@
 			</div>
 		</section>
 		<!--
-		<img
-			class="absolute top-0 opacity-5"
-			src="/figma_ee.png"
-			s_tyle="clip: rect(1665px, 1440px, 2467px, 0px)"
-		/>
+			<img class="absolute top-0 opacity-10" src="/figma_ee_1.png" />
+			<script type="module" src="./src/enterprise.ts"></script>
 		-->
-		
 	</body>
 </html>
