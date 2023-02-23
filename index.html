@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Open-source Edition</title>
 		
-		<link rel="stylesheet" href="./assets/main-3f86d215.css">
+		<link rel="stylesheet" href="./assets/main-a498a724.css">
 	</head>
 	<body>
 		<section class="bg-[#00023b] text-white">
@@ -87,66 +87,94 @@
 					and maintainability.<br />
 					See what you can build in a week.
 				</h2>
-				<ul class="mt-8 grid grid-cols-2 gap-x-12 gap-y-8">
+				<ul class="mt-8 grid grid-cols-2 gap-x-12 gap-y-8 text-center">
 					<li>
-						<div
-							style="height: 330px; width: 630px; background-color: lightgray"
-						></div>
+						<img src="./video_1.png" class="rounded-lg drop-shadow-xl" />
 						<h3
-							class="mt-8 text-center text-[24px] font-bold leading-[28px] text-[#00023b]"
+							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
 							E-commerce Admin
 						</h3>
-						<p
-							class="m-2 text-center text-[18px] font-semibold leading-[27px] text-[#ea1763]"
+						<ul
+							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
-							Demo Source
-						</p>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Demo<img src="./arrow-right.svg"
+								/></a>
+							</li>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Source<img src="./arrow-right.svg"
+								/></a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<div
-							style="height: 330px; width: 630px; background-color: lightgray"
-						></div>
+						<img src="./video_2.png" class="rounded-lg drop-shadow-xl" />
 						<h3
-							class="mt-8 text-center text-[24px] font-bold leading-[28px] text-[#00023b]"
+							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
 							CRM
 						</h3>
-						<p
-							class="m-2 text-center text-[18px] font-semibold leading-[27px] text-[#ea1763]"
+						<ul
+							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
-							Demo Source
-						</p>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Demo<img src="./arrow-right.svg"
+								/></a>
+							</li>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Source<img src="./arrow-right.svg"
+								/></a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<div
-							style="height: 330px; width: 630px; background-color: lightgray"
-						></div>
+						<img src="./video_3.png" class="rounded-lg drop-shadow-xl" />
 						<h3
-							class="mt-8 text-center text-[24px] font-bold leading-[28px] text-[#00023b]"
+							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
 							Lorem eliquam
 						</h3>
-						<p
-							class="m-2 text-center text-[18px] font-semibold leading-[27px] text-[#ea1763]"
+						<ul
+							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
-							Demo Source
-						</p>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Demo<img src="./arrow-right.svg"
+								/></a>
+							</li>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Source<img src="./arrow-right.svg"
+								/></a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<div
-							style="height: 330px; width: 630px; background-color: lightgray"
-						></div>
+						<img src="./video_4.png" class="rounded-lg drop-shadow-xl" />
 						<h3
-							class="mt-8 text-center text-[24px] font-bold leading-[28px] text-[#00023b]"
+							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
 							Dolorem elit
 						</h3>
-						<p
-							class="m-2 text-center text-[18px] font-semibold leading-[27px] text-[#ea1763]"
+						<ul
+							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
-							Demo Source
-						</p>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Demo<img src="./arrow-right.svg"
+								/></a>
+							</li>
+							<li>
+								<a class="inline-flex hover:underline" href="#"
+									>Source<img src="./arrow-right.svg"
+								/></a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -186,12 +214,25 @@
 					Your first admin only needs <b class="font-bold">13 lines of code</b>.
 				</p>
 				<div class="grid grid-cols-2 gap-8">
-					<div
-						style="height: 359px; width: 640px; background-color: lightgray"
-					></div>
-					<div
-						style="height: 359px; width: 640px; background-color: lightgray"
-					></div>
+					<pre
+						class="rounded-lg bg-[#00023b] p-4 text-[14px] font-normal leading-[20px]"
+					><code
+						><span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
+<span class="text-[#00b3da]">import</span> { Admin, Resource, ListGuesser } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
+
+<span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
+<span class="text-[#00b3da]">import</span> { Admin } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
+
+<span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
+<span class="text-[#00b3da]">import</span> { Admin, Resource, ListGuesser } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
+<span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
+<span class="text-[#00b3da]">import</span> { Admin, Resource, ListGuesser } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
+<span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;</code
+					></pre>
+					<img
+						src="./screen_get_started.png"
+						class="rounded-lg drop-shadow-xl"
+					/>
 				</div>
 			</div>
 		</section>
@@ -426,7 +467,7 @@
 			</div>
 		</section>
 		<!--
-		<img class="absolute top-0 opacity-25" src="/figma_oe.png" />
+			<img class="absolute top-0 opacity-20" src="/figma_oe.png" />
 		<script type="module" src="./src/open-source.ts"></script>
 		--></body>
 </html>
