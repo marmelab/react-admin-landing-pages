@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Open-source Edition</title>
 		
-		<link rel="stylesheet" href="./assets/main-9f20e624.css">
+		<link rel="stylesheet" href="./assets/main-7ffb5eb4.css">
 	</head>
 	<body>
 		<section class="bg-[#00023b] text-white">
@@ -19,7 +19,7 @@
 						class="flex justify-end gap-4 py-7 text-[14px] font-semibold leading-[21px]"
 					>
 						<li><a class="hover:underline" href="#">Documentation</a></li>
-						<li><a class="hover:underline" href="#">Démo</a></li>
+						<li><a class="hover:underline" href="#">Demo</a></li>
 						<li><a class="hover:underline" href="#">Blog</a></li>
 						<li>
 							<a
@@ -35,10 +35,10 @@
 		</section>
 		<section class="bg-[#00023b] text-white">
 			<div
-				class="mx-auto max-w-[1440px] bg-[url('/oe_bg.png')] bg-bottom bg-no-repeat px-16 pt-7"
+				class="mx-auto max-w-[1440px] bg-[url('/bg-hero-oss.svg')] bg-bottom bg-no-repeat px-16 pt-7"
 			>
 				<div class="text-center">
-					<h1 class="text-[64px] font-bold leading-[72px]">
+					<h1 class="text-[60px] font-bold leading-[64px]">
 						The React Framework<br />for B2B Apps
 					</h1>
 					<h2 class="mt-8 text-[21px] font-light leading-[28px]">
@@ -65,15 +65,25 @@
 				</div>
 				<div class="relative mt-8 flex justify-center text-white">
 					<pre
-						class="absolute top-[60%] left-[38%] rounded-md border bg-[#00023b] p-2 pr-20 pb-10 text-[14px] font-normal leading-[20px]"
+						class="absolute top-[34%] left-[48%] rounded-md border bg-[#00023b] p-4 pr-8 text-[12px] font-normal leading-[16px] text-[#00b3da]"
 					><code
-						><span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
-<span class="text-[#00b3da]">import</span> { Admin, Resource, ListGuesser } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
-
-<span class="text-[#00b3da]">import</span> React <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react'</span>;
-<span class="text-[#00b3da]">import</span> { Admin } <span class="text-[#00b3da]">from</span> <span class="text-[#1bceb9]">'react-admin'</span>;
+						>const App <span class="text-[#ffa939]">=</span> () <span class="text-[#ffa939]">=&gt;</span> (
+	&lt;Admin
+		<span class="text-[#1bceb9]">dataProvider</span><span class="text-[#e7e8f3]">=</span><span class="text-[#1bceb9]">{dataProvider}</span>
+		<span class="text-[#1bceb9]">authProvider</span><span class="text-[#e7e8f3]">=</span><span class="text-[#1bceb9]">{authProvider}</span>
+		<span class="text-[#1bceb9]">layout</span><span class="text-[#e7e8f3]">=</span><span class="text-[#1bceb9]">{Layout}</span>
+		<span class="text-[#1bceb9]">dashboard</span><span class="text-[#e7e8f3]">=</span><span class="text-[#1bceb9]">{Dashboard}</span>
+	&gt;
+		&lt;Resource <span class="text-[#1bceb9]">name</span><span class="text-[#e7e8f3]">=</span>"deals" <span class="text-[#1bceb9]">{...deals}</span> /&gt;
+		&lt;Resource <span class="text-[#1bceb9]">name</span><span class="text-[#e7e8f3]">=</span>"contacts" <span class="text-[#1bceb9]">{...contacts}</span> /&gt;
+		&lt;Resource <span class="text-[#1bceb9]">name</span><span class="text-[#e7e8f3]">=</span>"companies" <span class="text-[#1bceb9]">{...companies}</span> /&gt;
+		&lt;Resource <span class="text-[#1bceb9]">name</span><span class="text-[#e7e8f3]">=</span>"contactNotes" /&gt;
+		&lt;Resource <span class="text-[#1bceb9]">name</span><span class="text-[#e7e8f3]">=</span>"dealNotes" /&gt;
+	&lt;/Admin&gt;
+);
 </code></pre>
-					<img src="./screen_oe.png" />
+					<!-- <img src="/screen_oe.png" /> -->
+					<img src="./Screen_oss.png" class="-ml-44" />
 				</div>
 			</div>
 		</section>
@@ -245,16 +255,15 @@
 					Focus on business logic and let react-admin handle common features.The
 					vast library of hooks and components covers most use cases.
 				</p>
-				<ul
-					style="margin-left: -218px; margin-top: 2px; margin-right: -300px"
-					class="flex gap-4"
-				>
+				<ul style="margin-left: 138px; margin-top: 2px" class="flex gap-4">
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./roles-and-permissions.svg" />
+						<img src="/roles-and-permissions.svg" />
 						Roles & Permissions
 					</li>
+					-->
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
@@ -273,23 +282,24 @@
 						<img src="./relationships.svg" />
 						Relationships
 					</li>
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./roles-and-permissions.svg" />
+						<img src="/roles-and-permissions.svg" />
 						Roles & Permissions
 					</li>
+					-->
 				</ul>
-				<ul
-					style="margin-left: -91px; margin-top: 16px; margin-right: -300px"
-					class="flex gap-4"
-				>
+				<ul style="margin-left: 60px; margin-top: 16px" class="flex gap-4">
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./i18n.svg" />
+						<img src="/i18n.svg" />
 						i18n
 					</li>
+					-->
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
@@ -320,23 +330,24 @@
 						<img src="./caching.svg" />
 						Caching
 					</li>
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./routing.svg" />
+						<img src="/routing.svg" />
 						Routing
 					</li>
+					-->
 				</ul>
-				<ul
-					style="margin-left: -174px; margin-top: 16px; margin-right: -300px"
-					class="flex gap-4"
-				>
+				<ul style="margin-left: 118px; margin-top: 16px" class="flex gap-4">
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./rich-text-editor.svg" />
+						<img src="/rich-text-editor.svg" />
 						Rich text editor
 					</li>
+					-->
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
@@ -361,12 +372,14 @@
 						<img src="./accessibility.svg" />
 						Accessibility
 					</li>
+					<!--
 					<li
 						class="inline-flex gap-2 rounded-3xl bg-[#2e3062] px-6 py-4 text-[24px] font-bold leading-[28px]"
 					>
-						<img src="./rich-text-editor.svg" />
+						<img src="/rich-text-editor.svg" />
 						Rich text editor
 					</li>
+					-->
 				</ul>
 			</div>
 		</section>
@@ -742,6 +755,7 @@
 			</div>
 		</section>
 		<!--
+			<img class="absolute top-0 opacity-30" src="/figma_oe_1.png" />
 			<img class="absolute top-0 opacity-20" src="/figma_oe.png" />
 		<script type="module" src="./src/open-source.ts"></script>
 		--></body>
