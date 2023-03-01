@@ -2,29 +2,65 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+		<!-- <link rel="icon" type="image/svg+xml" href="/ra-oe.svg" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Open-source Edition</title>
 		
-		<link rel="stylesheet" href="./assets/main-40a37fcd.css">
+		<link rel="stylesheet" href="./assets/main-311ec694.css">
 	</head>
 	<body>
 		<section class="bg-[#00023b] text-white">
 			<div class="mx-auto max-w-[1440px] px-16 py-6">
 				<div class="flex justify-between">
-					<div class="flex items-center gap-3">
-						<img src="./ra-oe.svg" />
+					<div class="flex items-center gap-4">
+						<img src="./ra-oe.svg" class="pr-2" />
+						<a
+							class="inline-block rounded border border-[#ea1763] px-2 py-0.5 text-[14px] font-semibold leading-[21px] text-[#ea1763]"
+							href="https://github.com/marmelab/react-admin"
+						>
+							<svg
+								aria-hidden="true"
+								class="inline-block h-5 w-5"
+								fill="currentColor"
+							>
+								<path
+									d="M8.61 1.245a1 1 0 0 1 1.78 0l2.026 3.97a1 1 0 0 0 .734.533l4.4.7a1 1 0 0 1 .551 1.694l-3.149 3.153a1 1 0 0 0-.28.862l.694 4.402a1 1 0 0 1-1.44 1.047l-3.973-2.02a1 1 0 0 0-.906 0l-3.972 2.02a1 1 0 0 1-1.441-1.047l.694-4.402a1 1 0 0 0-.28-.862L.898 8.142a1 1 0 0 1 .551-1.694l4.401-.7a1 1 0 0 0 .734-.533l2.025-3.97Z"
+								/>
+							</svg>
+							<svg
+								aria-hidden="true"
+								class="ml-2 inline-block h-5 w-5"
+								stroke="currentColor"
+							>
+								<path d="M1 .5v21" />
+							</svg>
+							<span class="-ml-3 text-[#e7e8f3]">21290</span></a
+						>
+						<a href="https://github.com/marmelab/react-admin">
+							<img src="./github.svg" />
+						</a>
+						<a href="https://discord.gg/GeZF9sqh3N">
+							<img src="./discord.svg" />
+						</a>
 					</div>
 					<ul
-						class="flex justify-end gap-4 py-6 text-[14px] font-semibold leading-[21px]"
+						class="flex justify-end gap-4 py-7 text-[14px] font-semibold leading-[21px]"
 					>
-						<li><a class="hover:underline" href="#">Documentation</a></li>
-						<li><a class="hover:underline" href="#">Demo</a></li>
-						<li><a class="hover:underline" href="#">Blog</a></li>
+						<li>
+							<a class="hover:underline" href="/react-admin/documentation.html"
+								>Documentation</a
+							>
+						</li>
+						<li>
+							<a class="hover:underline" href="/react-admin/Demos.html">Demo</a>
+						</li>
+						<li>
+							<a class="hover:underline" href="/en/blog/#react-admin">Blog</a>
+						</li>
 						<li>
 							<a
 								href="./enterprise.html"
-								class="inline-flex items-center rounded-[4px] border border-[#1bceb9] px-2 py-0.5 text-[14px] font-semibold leading-[21px] text-[#1bceb9] shadow-sm hover:border-[#00023b] hover:bg-[#1bceb9] hover:text-[#00023b]"
+								class="inline-flex items-center rounded border border-[#1bceb9] px-2 py-0.5 text-[14px] font-semibold leading-[21px] text-[#1bceb9] shadow-sm hover:border-[#00023b] hover:bg-[#1bceb9] hover:text-[#00023b]"
 							>
 								Enterprise Edition
 							</a>
@@ -33,10 +69,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#00023b] text-white">
-			<div
-				class="mx-auto max-w-[1440px] bg-[url('/bg-hero-oss.svg')] bg-bottom bg-no-repeat px-16 pt-8"
-			>
+		<section
+			class="bg-[#00023b] bg-[url('/bg-hero-oss_1.svg')] bg-bottom bg-no-repeat text-white"
+		>
+			<div class="mx-auto max-w-[1440px] px-16 pt-7">
 				<div class="text-center">
 					<h1 class="text-[60px] font-bold leading-[64px]">
 						The React Framework<br />for B2B Apps
@@ -48,7 +84,7 @@
 					<div class="pt-8">
 						<a
 							class="inline-block rounded-full bg-[#ea1763] px-7 py-4 text-[18px] font-semibold leading-[27px] text-white"
-							href="#"
+							href="https://marmelab.com/react-admin/documentation.html"
 						>
 							<svg
 								aria-hidden="true"
@@ -87,7 +123,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#e7e8f3] px-16 py-24 text-[#00023b]">
+		<section class="bg-[#e7e8f3] px-24 py-24 text-[#00023b]">
 			<div class="mx-auto max-w-[1440px]">
 				<h1 class="text-center text-[32px] font-bold leading-[40px]">
 					Build internal tools / ERPs / B2B apps, fast
@@ -97,9 +133,14 @@
 					and maintainability.<br />
 					See what you can build in a week.
 				</h2>
-				<ul class="mt-8 grid grid-cols-2 gap-x-12 gap-y-8 text-center">
+				<ul class="mt-8 grid grid-cols-2 gap-x-16 gap-y-8 text-center">
 					<li>
-						<img src="./video_1.png" class="rounded-lg drop-shadow-xl" />
+						<iframe
+							src="https://player.vimeo.com/video/474999017/?h=4557e43b02&color=EA1763&title=0&byline=0&portrait=0"
+							class="aspect-video w-full shadow-xl"
+							allow="autoplay; fullscreen; picture-in-picture"
+							allowfullscreen
+						></iframe>
 						<h3
 							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
@@ -109,19 +150,27 @@
 							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://marmelab.com/react-admin-demo/"
 									>Demo<img src="./arrow-right.svg"
 								/></a>
 							</li>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://github.com/marmelab/react-admin/tree/master/examples/demo"
 									>Source<img src="./arrow-right.svg"
 								/></a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<img src="./video_2.png" class="rounded-lg drop-shadow-xl" />
+						<video
+							src="https://marmelab.com/react-admin-crm/assets/react-admin-crm.mp4"
+							controls
+							class="aspect-video w-full shadow-xl"
+						></video>
 						<h3
 							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
@@ -131,56 +180,75 @@
 							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://marmelab.com/react-admin-crm/"
 									>Demo<img src="./arrow-right.svg"
 								/></a>
 							</li>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://github.com/marmelab/react-admin/tree/master/examples/crm"
 									>Source<img src="./arrow-right.svg"
 								/></a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<img src="./video_3.png" class="rounded-lg drop-shadow-xl" />
+						<video
+							src="https://user-images.githubusercontent.com/99944/212743583-a4ee135f-f55b-4305-86c4-a3da1c49bb98.mov"
+							controls
+							class="aspect-video w-full shadow-xl"
+						></video>
 						<h3
 							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
-							Lorem eliquam
+							HelpDesk
 						</h3>
 						<ul
 							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://marmelab.com/react-admin-helpdesk/"
 									>Demo<img src="./arrow-right.svg"
 								/></a>
 							</li>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://github.com/marmelab/react-admin-helpdesk"
 									>Source<img src="./arrow-right.svg"
 								/></a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<img src="./video_4.png" class="rounded-lg drop-shadow-xl" />
+						<img
+							class="aspect-video w-full shadow-xl"
+							src="https://marmelab.com/react-admin/img/navidrome.png"
+						/>
 						<h3
 							class="mt-8 text-[24px] font-bold leading-[28px] text-[#00023b]"
 						>
-							Dolorem elit
+							Media player
 						</h3>
 						<ul
 							class="m-2 flex justify-center gap-4 text-[18px] font-semibold leading-[27px] text-[#ea1763]"
 						>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://demo.navidrome.org/app/"
 									>Demo<img src="./arrow-right.svg"
 								/></a>
 							</li>
 							<li>
-								<a class="inline-flex hover:underline" href="#"
+								<a
+									class="inline-flex hover:underline"
+									href="https://github.com/navidrome/navidrome/"
 									>Source<img src="./arrow-right.svg"
 								/></a>
 							</li>
@@ -216,7 +284,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="bg-[#2e3062] p-24 px-16 text-white" style="height: 683px">
+		<section class="bg-[#2e3062] p-24 px-24 pb-14 text-white">
 			<div class="mx-auto max-w-[1440px]">
 				<h1 class="text-[32px] font-bold leading-[40px]">
 					Get started in minutes
@@ -245,6 +313,45 @@
 						src="./screen_get_started.png"
 						class="rounded-lg drop-shadow-xl"
 					/>
+				</div>
+				<!-- div with tailwind classes to center content horizontal and vertically -->
+				<div class="relative -mt-8 flex items-center justify-center">
+					<svg
+						aria-hidden="true"
+						class="absolute left-[calc(50%-9rem)] top-[-2rem] inline-block h-12 w-12"
+						fill="currentColor"
+						style="top: calc(50%-10rem)"
+					>
+						<path
+							f_ill="#E7E8F3"
+							d="M5.328 7.336a3 3 0 0 0-3.604 4.797l3.604-4.797Zm41.4 22.281a3 3 0 0 0 1.098-4.098l-13.5-23.383a3 3 0 1 0-5.196 3l12 20.785-20.785 12a3 3 0 0 0 3 5.196l23.383-13.5ZM1.724 12.133c13.178 9.9 27.916 13.815 42.727 17.784l1.553-5.796c-14.968-4.01-28.569-7.689-40.676-16.785l-3.604 4.797Z"
+						/>
+					</svg>
+					<a
+						class="inline-block rounded-full bg-[#ea1763] px-8 py-4 text-[24px] font-semibold leading-[36px] text-white"
+						href="https://marmelab.com/react-admin/documentation.html"
+						>Try me</a
+					>
+				</div>
+
+				<div class="-mt-8 hidden text-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="49"
+						height="44"
+						fill="none"
+						viewBox="0 0 49 44"
+					>
+						<path
+							fill="#E7E8F3"
+							d="M5.328 7.336a3 3 0 0 0-3.604 4.797l3.604-4.797Zm41.4 22.281a3 3 0 0 0 1.098-4.098l-13.5-23.383a3 3 0 1 0-5.196 3l12 20.785-20.785 12a3 3 0 0 0 3 5.196l23.383-13.5ZM1.724 12.133c13.178 9.9 27.916 13.815 42.727 17.784l1.553-5.796c-14.968-4.01-28.569-7.689-40.676-16.785l-3.604 4.797Z"
+						/>
+					</svg>
+					<a
+						class="inline-block rounded-full bg-[#ea1763] px-8 py-4 text-[24px] font-semibold leading-[36px] text-white"
+						href="https://marmelab.com/react-admin/documentation.html"
+						>Try me</a
+					>
 				</div>
 			</div>
 		</section>
@@ -414,7 +521,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-white p-24 text-[#00023b]" style="height: 1832px">
+		<section class="bg-white p-24 text-[#00023b]">
 			<div class="mx-auto max-w-[1440px]">
 				<h1 class="mb-16 text-center text-[32px] font-bold leading-[40px]">
 					Read what people say about it...
@@ -436,7 +543,25 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">Caritas</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=1"
+							alt=""
+						/>
+						<!--
+						-->
+						<!--
+						<img
+							src="https://marmelab.com/static/e8d6bee9bbe0128005aeee8ce905a428/cf465/alexander-rees.webp"
+							alt="Alexander Rees"
+							style="
+								width: 150px;
+								height: 150px;
+								object-fit: cover;
+								clip-path: inset(0px 0px 0px 0px round 0px);
+							"
+						/> -->
+						<!-- <img src="https://marmelab.com/static/e8d6bee9bbe0128005aeee8ce905a428/cf465/alexander-rees.webp" alt="Alexander Rees" class="w-48 h-48 object-cover overflow-hidden"> -->
 					</div>
 				</blockquote>
 				<blockquote
@@ -456,7 +581,11 @@
 								Code Finds a Way
 							</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=2"
+							alt=""
+						/>
 					</div>
 				</blockquote>
 				<blockquote
@@ -474,7 +603,11 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">lalilo</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=3"
+							alt=""
+						/>
 					</div>
 				</blockquote>
 				<blockquote
@@ -492,7 +625,11 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">Iron Hack</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=4"
+							alt=""
+						/>
 					</div>
 				</blockquote>
 				<blockquote
@@ -510,7 +647,11 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">SmartPredict</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=5"
+							alt=""
+						/>
 					</div>
 				</blockquote>
 				<blockquote
@@ -528,7 +669,11 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">Metiri</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=6"
+							alt=""
+						/>
 					</div>
 				</blockquote>
 				<blockquote
@@ -547,117 +692,68 @@
 							</p>
 							<p class="text-[18px] font-light leading-[26px]">The Distance</p>
 						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
+						<img
+							class="inline-block h-24 w-24 rounded-full"
+							src="https://i.pravatar.cc/150?img=7"
+							alt=""
+						/>
 					</div>
 				</blockquote>
-				<!--
-				<blockquote
-					class="break-inside-avoid-column rounded-xl bg-[#e7e8f3] p-8"
-				>
-					<p class="text-[21px] font-light italic leading-[28px]">
-						“ React-admin is simpler to setup and more customizable than forest
-						admin. Support is great, documentation is rich of examples and
-						explain well the philosophy of the library.”“ React-admin is simpler
-						to setup and more customizable than forest admin. Support is great,
-						documentation is rich of examples and explain well the philosophy of
-						the library.”
-					</p>
-					<div class="mt-8 flex justify-between">
-						<div>
-							<p class="mb-2 text-[24px] font-bold leading-[28px]">
-								Nicolas Girault, CTO
-							</p>
-							<p class="text-[18px] font-light leading-[26px]">Lalilo</p>
-						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
-					</div>
-				</blockquote>
-				<blockquote
-					class="break-inside-avoid-column rounded-xl bg-[#e7e8f3] p-8"
-				>
-					<p class="text-[21px] font-light italic leading-[28px]">
-						“ React-admin is simpler to setup and more customizable than forest
-						admin. Support is great, documentation is rich of examples and
-						explain well the philosophy of the library.”
-					</p>
-					<div class="mt-8 flex justify-between">
-						<div>
-							<p class="mb-2 text-[24px] font-bold leading-[28px]">
-								Nicolas Girault, CTO
-							</p>
-							<p class="text-[18px] font-light leading-[26px]">Lalilo</p>
-						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
-					</div>
-				</blockquote>
-				<blockquote
-					class="break-inside-avoid-column rounded-xl bg-[#e7e8f3] p-8"
-				>
-					<p class="text-[21px] font-light italic leading-[28px]">
-						“ React-admin is simpler to setup and more customizable than forest
-						admin. Support is great, documentation is rich of examples and
-						explain well the philosophy of the library.”
-					</p>
-					<div class="mt-8 flex justify-between">
-						<div>
-							<p class="mb-2 text-[24px] font-bold leading-[28px]">
-								Nicolas Girault, CTO
-							</p>
-							<p class="text-[18px] font-light leading-[26px]">Lalilo</p>
-						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
-					</div>
-				</blockquote>
-				<blockquote
-					class="break-inside-avoid-column rounded-xl bg-[#e7e8f3] p-8"
-				>
-					<p class="text-[21px] font-light italic leading-[28px]">
-						“ React-admin is simpler to setup and more customizable than forest
-						admin. Support is great, documentation is rich of examples and
-						explain well the philosophy of the library. ”Support is great,
-						documentation is rich of examples and explain well the philosophy of
-						the library.”
-					</p>
-					<div class="mt-8 flex justify-between">
-						<div>
-							<p class="mb-2 text-[24px] font-bold leading-[28px]">
-								Nicolas Girault, CTO
-							</p>
-							<p class="text-[18px] font-light leading-[26px]">Lalilo</p>
-						</div>
-						<div class="h-24 w-24 shrink-0 rounded-full bg-gray-400"></div>
-					</div>
-				</blockquote>
-				-->
 			</div>
 		</section>
-		<section class="bg-[#e7e8f3] p-24 text-[#00023b]">
+		<section class="bg-[#e7e8f3] py-24 text-[#00023b]">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="text-center text-[32px] font-bold leading-[40px]">
+				<h1 class="mb-8 text-center text-[32px] font-bold leading-[40px]">
 					Built with state-of-the-art libraries
 				</h1>
+
 				<ul
-					class="flex items-center justify-between px-72 pt-8 text-[12px] font-light leading-[20px]"
+					class="grid grid-flow-col justify-center gap-x-16 text-[12px] font-light leading-[20px]"
 				>
-					<li class=""><img class="" src="./react.png" />React</li>
-					<li class=""><img class="" src="./material-ui.png" />MUI</li>
-					<li class=""><img class="" src="./react-router.png" />React Router</li>
-					<li class=""><img class="" src="./react-query.png" />React-query</li>
-					<li class="">
-						<img class="" src="./react-hook-form.png" />React-hook-form
+					<li class="relative h-24">
+						<img class="pt-1" src="./react.png" />
+						<span class="absolute bottom-0 ml-5 block whitespace-nowrap"
+							>React</span
+						>
 					</li>
-					<li class=""><img class="" src="./typescript.png" />Typescript</li>
+					<li class="relative h-24">
+						<img class="pt-1" src="./material-ui.png" />
+						<span class="absolute bottom-0 ml-5 block whitespace-nowrap"
+							>MUI</span
+						>
+					</li>
+					<li class="relative h-24">
+						<img class="pt-4" src="./react-router.png" />
+						<span class="absolute bottom-0 -ml-1 block whitespace-nowrap"
+							>React Router</span
+						>
+					</li>
+					<li class="relative h-24">
+						<img class="pt-3" src="./react-query.png" />
+						<span class="absolute bottom-0 -ml-2 block whitespace-nowrap"
+							>React-query</span
+						>
+					</li>
+					<li class="relative h-24">
+						<img class="pt-2" src="./react-hook-form.png" />
+						<span class="absolute bottom-0 -ml-6 block whitespace-nowrap"
+							>React-hook-form</span
+						>
+					</li>
+					<li class="relative h-24">
+						<img class="pt-3" src="./typescript.png" />
+						<span class="absolute bottom-0 -ml-1 block whitespace-nowrap"
+							>Typescript</span
+						>
+					</li>
 				</ul>
 			</div>
 		</section>
 		<section
-			class="bg-[#2e3062] px-16 pb-24 pt-24 text-white"
+			class="bg-[#2e3062] bg-no-repeat px-16 pb-52 pt-24 text-white"
 			style="
-				height: 1204px;
-
-				/* background-image: url('/group_4.svg'), url('/ellipse_5.svg'); */
-				/* background-repeat: no-repeat; */
-				/* background-position: top -700px center, top 360px center; */
+				background-image: url('group_4.svg'), url('ellipse_51.svg');
+				background-position: bottom -714px center, center;
 			"
 		>
 			<div class="mx-auto max-w-[1440px]">
@@ -669,7 +765,6 @@
 					<a class="font-bold underline hover:no-underline" href="">Marmelab</a>
 					since 2016
 				</p>
-
 				<div class="isolate mx-0 mt-8 grid grid-cols-2 gap-x-8 px-32">
 					<div
 						class="mt-8 flex flex-col justify-between rounded-xl bg-[#e7e8f3]"
@@ -702,7 +797,7 @@
 							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 pt-16 text-center"
 						>
 							<a
-								href="#"
+								href="https://www.npmjs.com/package/react-admin"
 								class="inline-block rounded-full bg-[#ea1763] px-12 py-7 text-center text-[21px] font-semibold leading-[31.5px] text-white"
 								>Free</a
 							>
@@ -745,7 +840,7 @@
 							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 pt-16 text-center"
 						>
 							<a
-								href="#"
+								href="./enterprise.html"
 								class="inline-block rounded-full bg-[#1bceb9] px-12 py-7 text-center text-[21px] font-semibold leading-[31.5px] text-[#00023b]"
 								>Discover</a
 							>
@@ -759,7 +854,34 @@
 				</div>
 			</div>
 		</section>
+		<footer class="bg-[#00023b] p-24 py-8 text-white">
+			<div
+				class="mx-auto flex max-w-[1440px] items-end justify-between py-20 text-[18px] font-light leading-[26px]"
+			>
+				<div class="order-2 flex justify-center space-x-16">
+					<a
+						href="mailto:info@marmelab.com"
+						class="underline hover:no-underline"
+						>Contact</a
+					>
+					<a href="#" class="underline hover:no-underline">Legal</a>
+					<a href="#" class="underline hover:no-underline"
+						>Terms & Conditions</a
+					>
+				</div>
+				<div class="order-1">
+					<img src="./marmelab.png" />
+					Copyright <a href="#">Marmelab</a>
+				</div>
+			</div>
+		</footer>
 		<!--
+			<img
+				class="absolute top-0 opacity-50"
+				src="/figma_oe_3.png"
+				style="top: 45px"
+			/>
+
 			<img class="absolute top-0 opacity-20" src="/figma_oe_2.png" />
 			<img class="absolute top-0 opacity-20" src="/figma_oe_1.png" />
 			<img class="absolute top-0 opacity-20" src="/figma_oe.png" />

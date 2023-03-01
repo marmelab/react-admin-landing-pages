@@ -2,11 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+		<!-- <link rel="icon" type="image/svg+xml" href="/ra-ee.svg" /> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Enterprise Edition</title>
 		
-		<link rel="stylesheet" href="./assets/main-40a37fcd.css">
+		<link rel="stylesheet" href="./assets/main-311ec694.css">
 	</head>
 	<body>
 		<section class="bg-[#00023b] text-white">
@@ -67,15 +67,14 @@
 				</div>
 				<div class="relative mt-8 flex justify-center text-white">
 					<pre
-						class="absolute top-[41%] left-[11%] rounded-md border bg-[#00023b] p-4 text-[12px] font-normal leading-[16px] text-[#00b3da]"
+						class="absolute top-[42%] left-[7%] rounded-md border bg-[#00023b] p-4 text-[11px] font-normal leading-[16px] text-[#00b3da]"
 					><code
 						><span class="text-[#ffa939]">const</span> MyAppbar <span class="text-[#1bceb9]">=</span> <span class="text-white">()</span> <span class="text-[#1bceb9]">=&gt;</span> <span class="text-white">(</span>
 	<span class="text-[#1bceb9]">&lt;</span>AppBar<span class="text-[#1bceb9]">&gt;</span>
 		<span class="text-[#1bceb9]">&lt;</span>Logo <span class="text-[#1bceb9]">/&gt;</span>
-		<span class="text-[#1bceb9]">&lt;</span>Typography variant="h6" id="title" <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>Typography variant="h6" id="react-admin-title" <span class="text-[#1bceb9]">/&gt;</span>
 		<span class="text-[#1bceb9]">&lt;</span>Search <span class="text-[#1bceb9]">/&gt;</span>
-		<span class="text-[#1bceb9]">&lt;</span>ToggleThemeButton darkTheme={<span class="text-[#9870b7]">darkTheme</span>}
-			lightTheme={<span class="text-[#9870b7]">lightTheme</span>} <span class="text-[#1bceb9]">/&gt;</span>
+		<span class="text-[#1bceb9]">&lt;</span>ToggleThemeButton darkTheme={<span class="text-[#9870b7]">dark</span>} lightTheme={<span class="text-[#9870b7]">light</span>} <span class="text-[#1bceb9]">/&gt;</span>
 		<span class="text-[#1bceb9]">&lt;</span>LocalesMenuButton languages={<span class="text-[#9870b7]">languages</span>} <span class="text-[#1bceb9]">/&gt;</span>
 		<span class="text-[#1bceb9]">&lt;</span>RefreshIconButton <span class="text-[#1bceb9]">/&gt;</span>
 		<span class="text-[#1bceb9]">&lt;</span>CustomUserMenu <span class="text-[#1bceb9]">/&gt;</span>
@@ -83,19 +82,17 @@
 <span class="text-white">);</span></code
 					></pre>
 					<pre
-						class="absolute top-[0%] left-[57%] rounded-md border bg-[#00023b] p-4 pr-8 text-[12px] font-normal leading-[16px]"
+						class="absolute top-[0%] left-[59%] rounded-md border bg-[#00023b] p-4 pr-8 text-[11px] font-normal leading-[16px]"
 					><code
 							><span class="text-[#ffa939]">const</span> <span class="text-[#00b3da]">roles</span> = {
 	editor: [
 		{ <span class="text-[#9870b7]">action</span>: <span class="text-[#00b3da]">'*'</span>, <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'products'</span> },
-		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'read'</span>, <span class="text-[#00b3da]">'write'</span>],
-			<span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'products.*'</span> },
+		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'read'</span>, <span class="text-[#00b3da]">'write'</span>], <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'products.*'</span> },
 		{ <span class="text-[#9870b7]">action</span>: <span class="text-[#00b3da]">'list'</span>, <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'categories'</span> },
 	],
 	moderator: [
 		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'list'</span>], <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'customers'</span> },
-		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'list'</span>, <span class="text-[#00b3da]">'edit'</span>],
-			<span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'reviews'</span> },
+		{ <span class="text-[#9870b7]">action</span>: [<span class="text-[#00b3da]">'list'</span>, <span class="text-[#00b3da]">'edit'</span>], <span class="text-[#9870b7]">resource</span>: <span class="text-[#00b3da]">'reviews'</span> },
 	],    
 };</code
 						></pre>
@@ -104,25 +101,54 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#e7e8f3] p-8 text-[#00023b]">
+		<section class="bg-[#e7e8f3] py-8 text-[#00023b]">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="text-center text-[14px] font-semibold leading-[26px]">
+				<h1 class="pb-4 text-center text-[14px] font-semibold leading-[26px]">
 					Trusted by
 				</h1>
-				<ul class="flex justify-center">
-					<li><img src="./cdiscount.png" /></li>
-					<li><img src="./ibm.png" /></li>
-					<li><img src="./activision.png" /></li>
-					<li><img src="./xiaomi.png" /></li>
-					<li><img src="./ibm.png" /></li>
-					<li><img src="./cdiscount.png" /></li>
-					<li><img src="./xiaomi.png" /></li>
+				<ul class="flex items-center justify-center gap-x-8">
+					<li class="flex-shrink-flex-0 flex-flex-grow-0">
+						<img src="./brands/arte.png" />
+					</li>
+					<li class="flex-shrink-flex-0 flex-flex-grow-0">
+						<img src="./brands/caritas.png" />
+					</li>
+					<li class="flex-shrink-flex-0 flex-flex-grow-0">
+						<img src="./brands/classpass.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/ironman.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/lmax-group.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/mercedes.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/nio.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/open-sense.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/orange.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/skoda.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/ubisoft.png" />
+					</li>
+					<li class="flex-shrink-0 flex-grow-0">
+						<img src="./brands/overwolf.png" />
+					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="bg-[#00023b] p-24 text-white">
+		<section class="bg-[#00023b] p-24 pb-8 text-white">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-24 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-24 text-center text-[42px] font-bold leading-[48px]">
 					What's In The Package?
 				</h1>
 				<ul
@@ -214,7 +240,7 @@
 			id="private-modules"
 		>
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-10 text-center text-[42px] font-bold leading-[48px]">
 					Private modules
 				</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
@@ -282,7 +308,7 @@
 			"
 		>
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">
 					Private modules
 				</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
@@ -338,7 +364,7 @@
 			"
 		>
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">
 					Private modules
 				</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
@@ -386,14 +412,17 @@
 		</section>
 		<section class="bg-[#00023b] p-24 text-white">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-24 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-24 text-center text-[42px] font-bold leading-[46px]">
 					And also
 				</h1>
 				<div class="mb-20 columns-2 gap-24">
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Navigation</span
+								><img
+									src="./molecule.svg"
+									class="mr-4 inline-block"
+								/>Navigation</span
 							>
 						</h2>
 						<ul class="ml-8 list-disc text-[21px] font-light leading-[28px]">
@@ -413,7 +442,10 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Realtime</span
+								><img
+									src="./molecule.svg"
+									class="mr-4 inline-block"
+								/>Realtime</span
 							>
 						</h2>
 						<ul class="ml-8 list-disc text-[21px] font-light leading-[28px]">
@@ -433,7 +465,8 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Audit Log</span
+								><img src="./molecule.svg" class="mr-4 inline-block" />Audit
+								Log</span
 							>
 						</h2>
 						<ul class="ml-8 list-disc text-[21px] font-light leading-[28px]">
@@ -453,7 +486,10 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Relationships</span
+								><img
+									src="./molecule.svg"
+									class="mr-4 inline-block"
+								/>Relationships</span
 							>
 						</h2>
 						<ul class="ml-8 list-disc text-[21px] font-light leading-[28px]">
@@ -469,7 +505,10 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Calendar</span
+								><img
+									src="./molecule.svg"
+									class="mr-4 inline-block"
+								/>Calendar</span
 							>
 						</h2>
 						<ul class="ml-8 list-disc text-[21px] font-light leading-[28px]">
@@ -485,7 +524,8 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex items-start justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#999bba]"
-								>LDAP Auth</span
+								><img src="./molecule_gray.svg" class="mr-4 inline-block" />LDAP
+								Auth</span
 							>
 							<span
 								class="rounded-md bg-[#999bba] px-2 py-0.5 font-mono text-[28px] font-bold uppercase leading-[28px] text-[#2e3062]"
@@ -501,7 +541,10 @@
 					<div class="mb-24 break-inside-avoid-column">
 						<h2 class="mb-6 flex items-start justify-between">
 							<span class="text-[32px] font-bold leading-[40px] text-[#999bba]"
-								>Version</span
+								><img
+									src="./molecule_gray.svg"
+									class="mr-4 inline-block"
+								/>Version</span
 							>
 							<span
 								class="rounded-md bg-[#999bba] px-2 py-0.5 font-mono text-[28px] font-bold uppercase leading-[28px] text-[#2e3062]"
@@ -560,52 +603,92 @@
 			</div>
 		</section>
 		<section class="bg-[#e7e8f3] p-24 text-[#00023b]">
-			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
-					Support (WIP)
+			<div class="mx-auto mt-1 max-w-[1440px]">
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[46px]">
+					Support
 				</h1>
 				<h2
 					class="mb-8 text-center text-[21px] font-light leading-[28px] text-[#2e3062]"
 				>
 					React-admin experts, ready to answer your questions
 				</h2>
-				<div class="columns-3 gap-8">
-					<p class="break-inside-avoid text-[21px] font-light leading-[28px]">
-						Covers both the Open-Source Edition modules and the Enterprise
-						Edition modules.
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Get help troubleshooting your installation and react-admin usage
-						problems.
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Get guidance to the right documentation for your use case among a
-						large corpus of tutorials, handbooks, and type declarations.
-					</p>
-				</div>
-				<div class="mt-20 columns-3 gap-8">
-					<p class="break-inside-avoid text-[21px] font-light leading-[28px]">
-						Get code samples matching your need in existing examples and
-						StackOverflow answers
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Determine if a bug in your admin comes from react-admin or your code
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Be notified when a react-admin bug that affects you gets fixed
-					</p>
-				</div>
-				<div class="mt-16 text-center text-[21px] font-light leading-[28px]">
-					<p class="mb-8">
-						Support is done by email at
-						<a class="underline" href="#"
-							>support@react-admin-enterprise-edition.zendesk.com</a
-						>.
-					</p>
-					<p>
-						Phone support is proposed as an option to Corporate Plan
-						subscribers.
-					</p>
+
+				<div class="rounded-xl bg-white p-16">
+					<div class="grid grid-cols-3 gap-16">
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block" src="./support/s0.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Covers both the Open-Source Edition modules and the Enterprise
+								Edition modules.
+							</p>
+						</div>
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block p-1" src="./support/s1.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Get help troubleshooting your installation and react-admin usage
+								problems.
+							</p>
+						</div>
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block p-0.5" src="./support/s2.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Get guidance to the right documentation for your use case among
+								a large corpus of tutorials, handbooks, and type declarations.
+							</p>
+						</div>
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block p-2" src="./support/s3.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Get code samples matching your need in existing examples and
+								StackOverflow answers
+							</p>
+						</div>
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block p-1.5" src="./support/s4.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Determine if a bug in your admin comes from react-admin or your
+								code
+							</p>
+						</div>
+						<div
+							class="text-center"
+							cl_ass="flex flex-col items-center space-y-8"
+						>
+							<img class="mb-8 inline-block" src="./support/s5.svg" />
+							<p class="text-[18px] font-light leading-[26px]">
+								Be notified when a react-admin bug that affects you gets fixed
+							</p>
+						</div>
+					</div>
+					<div
+						class="mt-16 rounded-lg border-2 border-[#e7e8f3] p-8 text-center text-[18px] font-light leading-[26px]"
+					>
+						<p class="mb-2">
+							Support is done by email at
+							<a class="underline" href="#"
+								>support@react-admin-enterprise-edition.zendesk.com</a
+							>.
+						</p>
+						<p>
+							Phone support is proposed as an option to Corporate Plan
+							subscribers.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -618,7 +701,7 @@
 			"
 		>
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[46px]">
 					Plans & Pricing
 				</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
@@ -633,110 +716,137 @@
 					>
 					for a preview of these modules.
 				</p>
-				<div class="grid grid-cols-3 gap-8">
-					<div class="pt-8">
-						<header
-							class="rounded-xl rounded-b-none bg-[#00023b] p-6 text-center"
-						>
-							<div class="flex justify-center gap-4">
-								<img src="./team.svg" class="h-10 w-10" />
-								<h2 class="mb-6 text-[32px] font-bold leading-[40px]">Team</h2>
+
+				<div class="isolate mx-0 mt-8 grid grid-cols-3 gap-x-8 px-8">
+					<div
+						class="mt-8 flex flex-col justify-between rounded-xl bg-[#e7e8f3]"
+					>
+						<div>
+							<div class="rounded-xl rounded-b-none bg-[#00023b] p-6">
+								<header
+									class="rounded-xl rounded-b-none bg-[#00023b] text-center"
+								>
+									<div class="flex justify-center gap-4">
+										<img src="./team.svg" class="h-10 w-10" />
+										<h2 class="mb-6 text-[32px] font-bold leading-[40px]">
+											Team
+										</h2>
+									</div>
+									<h3 class="text-[21px] font-light leading-[28px]">
+										Great for one or two devs
+									</h3>
+								</header>
 							</div>
-							<h3 class="text-[21px] font-light leading-[28px]">
-								Great for one or two devs
-							</h3>
-						</header>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-7 text-[#00023b]"
-						>
-							<div class="mb-8 text-center">
+							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
 								<span class="text-[32px] font-bold leading-[40px]"
 									>135€ / month</span
 								><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
-							<ul class="ml-4 list-disc text-[21px] font-light leading-[28px]">
+							<ul
+								role="list"
+								class="list-disc space-y-8 bg-[#e7e8f3] pl-9 text-[21px] font-light leading-[28px] text-[#00023b]"
+								cla_ss="ml-4 list-disc text-[21px] font-light leading-[28px]"
+							>
 								<li class="mb-8">Up to <b class="font-bold">2 devs</b></li>
 								<li class="mb-8">Private modules on unlimited projects</li>
 								<li class="mb-8">Access to code and documentation</li>
 								<li class="mb-8">Unlimited support requests</li>
 								<li class="mb-8">50% discount on professional services</li>
+								<li class="mb-8">Support by phone (optional)</li>
 							</ul>
-							<div class="pt-24 text-center">
-								<a
-									class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-[21px] font-semibold leading-[31.5px]"
-									href="#"
-									>Subscribe</a
-								>
-							</div>
+						</div>
+						<div
+							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 pt-14 text-center"
+						>
+							<a
+								href="#"
+								class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-center text-[21px] font-semibold leading-[31.5px] text-[#00023b]"
+								>Subscribe</a
+							>
 						</div>
 					</div>
-					<div class="pt-0">
-						<header
-							class="rounded-xl rounded-b-none bg-[#00023b] p-10 text-center"
-						>
-							<div class="flex justify-center gap-4">
-								<img src="./business.svg" class="h-10 w-10" />
-								<h2 class="mb-6 text-[32px] font-bold leading-[40px]">
-									Business
-								</h2>
+					<div
+						class="mt-8 flex flex-col justify-between rounded-xl bg-[#e7e8f3]"
+					>
+						<div>
+							<div class="-mt-8 rounded-xl rounded-b-none bg-[#00023b] p-10">
+								<header
+									class="rounded-xl rounded-b-none bg-[#00023b] text-center"
+								>
+									<div class="flex justify-center gap-4">
+										<img src="./business.svg" class="h-10 w-10" />
+										<h2 class="mb-6 text-[32px] font-bold leading-[40px]">
+											Business
+										</h2>
+									</div>
+									<h3 class="text-[21px] font-light leading-[28px]">
+										For medium businesses
+									</h3>
+								</header>
 							</div>
-							<h3 class="text-[21px] font-light leading-[28px]">
-								For medium businesses
-							</h3>
-						</header>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-7 text-[#00023b]"
-						>
-							<div class="mb-8 text-center">
+							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
 								<span class="text-[32px] font-bold leading-[40px]"
 									>270€ / month</span
 								><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
-							<ul class="ml-4 list-disc text-[21px] font-light leading-[28px]">
+							<ul
+								role="list"
+								class="list-disc space-y-8 bg-[#e7e8f3] pl-9 text-[21px] font-light leading-[28px] text-[#00023b]"
+								cla_ss="ml-4 list-disc text-[21px] font-light leading-[28px]"
+							>
 								<li class="mb-8">Up to <b class="font-bold">10 devs</b></li>
 								<li class="mb-8">Private modules on unlimited projects</li>
 								<li class="mb-8">Access to code and documentation</li>
 								<li class="mb-8">Unlimited support requests</li>
 								<li class="mb-8">50% discount on professional services</li>
+								<li class="mb-8">Support by phone (optional)</li>
 							</ul>
-							<div class="pt-24 text-center">
-								<a
-									class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-[21px] font-semibold leading-[31.5px]"
-									href="#"
-									>Subscribe</a
-								>
-							</div>
+						</div>
+						<div
+							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 pt-14 text-center"
+						>
+							<a
+								href="#"
+								class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-center text-[21px] font-semibold leading-[31.5px] text-[#00023b]"
+								>Subscribe</a
+							>
 						</div>
 					</div>
-					<div class="pt-8">
-						<header
-							class="rounded-xl rounded-b-none bg-[#00023b] p-6 text-center"
-						>
-							<div class="flex justify-center gap-4">
-								<img src="./corporate.svg" class="h-10 w-10" />
-								<h2 class="mb-6 text-[32px] font-bold leading-[40px]">
-									Corporate
-								</h2>
+					<div
+						class="mt-8 flex flex-col justify-between rounded-xl bg-[#e7e8f3]"
+					>
+						<div>
+							<div class="rounded-xl rounded-b-none bg-[#00023b] p-6">
+								<header
+									class="rounded-xl rounded-b-none bg-[#00023b] text-center"
+								>
+									<div class="flex justify-center gap-4">
+										<img src="./corporate.svg" class="h-10 w-10" />
+										<h2 class="mb-6 text-[32px] font-bold leading-[40px]">
+											Corporate
+										</h2>
+									</div>
+									<h3 class="text-[21px] font-light leading-[28px]">
+										Adapted to large companies
+									</h3>
+								</header>
 							</div>
-							<h3 class="text-[21px] font-light leading-[28px]">
-								Adapted to large companies
-							</h3>
-						</header>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-7 text-[#00023b]"
-						>
-							<div class="mb-8 text-center">
+							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
 								<span class="text-[32px] font-bold leading-[40px]"
 									>540€ / month</span
 								><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
-							<ul class="ml-4 list-disc text-[21px] font-light leading-[28px]">
+							<ul
+								role="list"
+								class="list-disc space-y-8 bg-[#e7e8f3] pl-9 text-[21px] font-light leading-[28px] text-[#00023b]"
+								cla_ss="ml-4 list-disc text-[21px] font-light leading-[28px]"
+							>
 								<li class="mb-8"><b class="font-bold">Unlimited devs</b></li>
 								<li class="mb-8">Private modules on unlimited projects</li>
 								<li class="mb-8">Access to code and documentation</li>
@@ -744,50 +854,61 @@
 								<li class="mb-8">50% discount on professional services</li>
 								<li class="mb-8">Support by phone (optional)</li>
 							</ul>
-							<div class="pt-8 text-center">
-								<a
-									class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-[21px] font-semibold leading-[31.5px]"
-									href="#"
-									>Contact us</a
-								>
-							</div>
+						</div>
+						<div
+							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 pt-14 text-center"
+						>
+							<a
+								href="#"
+								class="inline-block rounded-full bg-[#1bceb9] px-12 py-6 text-center text-[21px] font-semibold leading-[31.5px] text-[#00023b]"
+								>Contact us</a
+							>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#e7e8f3] p-24 pb-32 text-[#00023b]">
+		<section class="bg-[#e7e8f3] p-24 text-[#00023b]">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-8 text-center text-[52px] font-bold leading-[56px]">
-					Professional Services (WIP)
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[46px]">
+					Professional Services
 				</h1>
 				<h2
 					class="mb-8 text-center text-[21px] font-light leading-[28px] text-[#2e3062]"
 				>
 					Custom react-admin services, paid by the day
 				</h2>
-				<div class="columns-3 gap-8">
-					<p class="break-inside-avoid text-[21px] font-light leading-[28px]">
-						Whether you need help to develop a component for your admin, an
-						audit of your code, personal training about react-admin, our senior
-						expert developers are available at 1,500€ per day.
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Subscribing to the Enterprise Edition gives a 50% discount on that
-						price, so Professional Services only cost 750€ per day.
-					</p>
-					<p class="break-inside-avoid text-[18px] font-light leading-[26px]">
-						Professional Services experts are all part of the react-admin core
-						team and take part in the development of the Open-source and
-						Enterprise editions. Their speed and experience will save you days
-						of development, if not weeks.
-					</p>
+				<div class="grid grid-cols-3 gap-16">
+					<div class="rounded-xl bg-white p-8 text-center">
+						<img class="inline-flex h-40 w-40" src="./services/developer.svg" />
+						<p class="text-[18px] font-light leading-[26px] mt-8">
+							Whether you need help to develop a component for your admin, an
+							audit of your code, personal training about react-admin, our
+							senior expert developers are available at 1,500€ per day.
+						</p>
+					</div>
+					<div class="rounded-xl bg-white p-8 text-center">
+						<img class="inline-flex h-40 w-40" src="./services/offer.svg" />
+						<p class="text-[18px] font-light leading-[26px] mt-8">
+							Subscribing to the Enterprise Edition gives a 50% discount on that
+							price, so Professional Services only cost 750€ per day.
+						</p>
+					</div>
+					<div class="rounded-xl bg-white p-8 text-center">
+						<img class="inline-flex h-40 w-40" src="./services/landing-page.svg" />
+						<p class="text-[18px] font-light leading-[26px] mt-8">
+							Professional Services experts are all part of the react-admin core
+							team and take part in the development of the Open-source and
+							Enterprise editions. Their speed and experience will save you days
+							of development, if not weeks.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#2e3062] p-24 text-white">
+		<section class="bg-[#2e3062] p-24 pb-8 text-white">
 			<div class="mx-auto max-w-[1440px]">
-				<h1 class="mb-16 text-center text-[52px] font-bold leading-[56px]">
+				<h1 class="mb-16 text-center text-[42px] font-bold leading-[46px]">
 					Frequently asked questions
 				</h1>
 				<div class="mb-20 rounded-lg bg-[#00023b] p-16">
@@ -946,9 +1067,26 @@
 				</div>
 			</div>
 		</section>
+		<footer class="bg-[#00023b] p-24 py-8 text-white">
+			<div
+				class="mx-auto flex max-w-[1440px] items-end justify-between py-20 text-[18px] font-light leading-[26px]"
+			>
+				<div class="order-2 flex justify-center space-x-16">
+					<a href="#" class="underline hover:no-underline"> Contact </a>
+					<a href="#" class="underline hover:no-underline"> Legal </a>
+					<a href="#" class="underline hover:no-underline">
+						Terms & Conditions
+					</a>
+				</div>
+				<div class="order-1">
+					<img src="./marmelab.png">
+					Copyright <a href="#">Marmelab</a>
+				</div>
+			</div>
+		</footer>
 		<!--
-			<img class="absolute top-0 opacity-10" src="/figma_ee_1.png" />
+			<img class="absolute top-0 opacity-30" src="/figma_ee_2.png" />
+			<img class="absolute top-0 opacity-50" src="/figma_ee_1.png" />
 			<script type="module" src="./src/enterprise.ts"></script>
-		-->
-	</body>
+		--></body>
 </html>
