@@ -6,66 +6,93 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>React-admin Enterprise Edition</title>
 		
-		<link rel="stylesheet" href="./assets/main-d241de2b.css">
+		<script type="module" crossorigin src="./assets/enterprise-21273609.js"></script>
+		<link rel="modulepreload" crossorigin href="./assets/main-02b961d8.js">
+		<link rel="stylesheet" href="./assets/main-015ce3e4.css">
 	</head>
 	<body>
-		<section class="bg-[#00023b] text-white">
-			<div
-				class="mx-auto max-w-screen-xl px-4 py-4 md:px-8 md:py-4 lg:px-16 lg:py-6"
-			>
+		<nav class="bg-[#00023b] text-white">
+			<div class="mx-auto max-w-screen-xl px-4 py-4 md:px-8 md:py-4 lg:px-16 lg:py-6">
+				<div class="flex h-16 justify-between">
+					<div class="flex">
+						<div class="flex flex-shrink-0 items-center gap-1 lg:gap-3">
+							<img src="./ra-ee.svg" class="h-12 w-auto md:h-16 lg:h-20" />
+							<span class="text-[14px] font-semibold leading-[18px] text-[#1bceb9] lg:text-[16px] lg:leading-[20px]">Enterprise<br />Edition</span>
+						</div>
+					</div>
+					<div class="hidden gap-4 text-[12px] font-semibold leading-[18px] md:flex lg:text-[14px] lg:leading-[21px]">
+						<a href="#private-modules" class="inline-flex items-center hover:underline">Private modules</a>
+						<a href="#support" class="inline-flex items-center hover:underline">Support</a>
+						<a href="#professional-services" class="inline-flex items-center hover:underline">Professional services</a>
+						<a href="#pricing" class="inline-flex items-center hover:underline">Pricing</a>
+						<a href="./" class="inline-flex items-center hover:underline">Open-source Edition</a>
+					</div>
+
+					<div class="-mr-2 flex items-center md:hidden">
+						<button
+							class="inline-flex items-center justify-center rounded-md p-2 hover:bg-white hover:text-[#1bceb9] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#1bceb9]"
+							aria-controls="mobile-menu"
+							aria-expanded="false"
+						>
+							<span class="sr-only">Open main menu</span>
+							<svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+							</svg>
+							<svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="hidden md:hidden" id="mobile-menu">
+				<div class="_space-y-2 _pt-2 _pb-3 text-[14px] font-semibold leading-[21px]">
+					<a href="#private-modules" class="block px-4 py-2 hover:underline">Private modules</a>
+					<a href="#support" class="block px-4 py-2 hover:underline">Support</a>
+					<a href="#professional-services" class="block px-4 py-2 hover:underline">Professional services</a>
+					<a href="#pricing" class="block px-4 py-2 hover:underline">Pricing</a>
+					<a href="./" class="block px-4 py-2 hover:underline">Open-source Edition</a>
+				</div>
+			</div>
+		</nav>
+<!--
+		<section class="hidden bg-[#00023b] text-white">
+			<div class="mx-auto max-w-screen-xl px-4 py-4 md:px-8 md:py-4 lg:px-16 lg:py-6">
 				<div class="flex justify-between">
 					<div class="flex items-center gap-1 lg:gap-3">
-						<img
-							src="./ra-ee.svg"
-							class="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20"
-						/>
-						<span
-							class="text-[14px] font-semibold leading-[18px] text-[#1bceb9] lg:text-[16px] lg:leading-[20px]"
-							>Enterprise<br />Edition</span
-						>
+						<img src="/ra-ee.svg" class="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20" />
+						<span class="text-[14px] font-semibold leading-[18px] text-[#1bceb9] lg:text-[16px] lg:leading-[20px]">Enterprise<br />Edition</span>
 					</div>
-					<ul
-						class="hidden justify-end gap-4 py-7 text-[12px] font-semibold leading-[18px] md:flex lg:text-[14px] lg:leading-[21px]"
-					>
-						<li><a class="hover:underline" href="#">Private modules</a></li>
-						<li><a class="hover:underline" href="#">Support</a></li>
-						<li>
-							<a class="hover:underline" href="#">Professionnal services</a>
-						</li>
-						<li><a class="hover:underline" href="#">Pricing</a></li>
-						<li>
-							<a class="hover:underline" href="./">Open-source Edition</a>
-						</li>
-					</ul>
+					<div>
+						<ul class="hidden justify-end gap-4 py-7 text-[12px] font-semibold leading-[18px] md:flex lg:text-[14px] lg:leading-[21px]">
+							<li><a class="hover:underline" href="#private-modules">Private modules</a></li>
+							<li><a class="hover:underline" href="#support">Support</a></li>
+							<li>
+								<a class="hover:underline" href="#professional-services">Professional services</a>
+							</li>
+							<li><a class="hover:underline" href="#pricing">Pricing</a></li>
+							<li>
+								<a class="hover:underline" href="./">Open-source Edition</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section
-			class="bg-[#00023b] bg-[url('/bg-hero-ee_1.svg')] bg-bottom bg-no-repeat text-white"
-		>
+	-->
+		<section class="bg-[#00023b] bg-[url('/bg-hero-ee_1.svg')] bg-bottom bg-no-repeat text-white">
 			<div class="mx-auto max-w-screen-xl px-4 pt-8 md:px-16">
 				<div class="text-center">
-					<h1
-						class="px-4 text-[36px] font-bold leading-[42px] md:px-0 md:text-[48px] md:leading-[54px] lg:text-[60px] lg:leading-[64px]"
-					>
+					<h1 class="px-4 text-[36px] font-bold leading-[42px] md:px-0 md:text-[48px] md:leading-[54px] lg:text-[60px] lg:leading-[64px]">
 						React-admin<br />
 						Enterprise Edition
 					</h1>
-					<h2
-						class="mt-4 px-4 text-[18px] font-light leading-[26px] md:mt-8 md:px-0 lg:text-[21px] lg:leading-[28px]"
-					>
+					<h2 class="mt-4 px-4 text-[18px] font-light leading-[26px] md:mt-8 md:px-0 lg:text-[21px] lg:leading-[28px]">
 						Professional Features and Support for react-admin
 					</h2>
 					<div class="pt-4 md:pt-8">
-						<a
-							class="inline-block rounded-full bg-[#1bceb9] px-5 py-4 text-[18px] font-semibold leading-[27px] text-[#00023b] md:px-7"
-							href="#"
-						>
-							<svg
-								aria-hidden="true"
-								class="-mr-0.5 inline-block h-5 w-5"
-								fill="currentColor"
-							>
+						<a class="inline-block rounded-full bg-[#1bceb9] px-5 py-4 text-[18px] font-semibold leading-[27px] text-[#00023b] md:px-7" href="#">
+							<svg aria-hidden="true" class="-mr-0.5 inline-block h-5 w-5" fill="currentColor">
 								<path
 									d="M10.014 9.297 3.64 15.672a1.12 1.12 0 0 1-1.589 0l-1.06-1.06a1.12 1.12 0 0 1 0-1.588l4.52-4.52L.99 3.987a1.12 1.12 0 0 1 0-1.59l1.055-1.068a1.12 1.12 0 0 1 1.59 0l6.374 6.375c.446.44.446 1.153.005 1.594Z"
 								/>
@@ -74,9 +101,7 @@
 						>
 					</div>
 				</div>
-				<div
-					class="relative mt-44 flex justify-center text-white md:mt-20 lg:mt-14"
-				>
+				<div class="relative mt-44 flex justify-center text-white md:mt-20 lg:mt-14">
 					<pre
 						class="absolute top-[44%] left-[-4%] hidden rounded-md border bg-[#00023b] p-2 text-[9px] font-normal leading-[11px] text-[#00b3da] md:block lg:left-[1%] lg:top-[40%] lg:p-4 lg:text-[11px] lg:leading-[16px] xl:left-[7%] xl:top-[40%]"
 					><code
@@ -107,196 +132,113 @@
 	],    
 };</code
 						></pre>
-					<img
-						src="./Screen_ee.png"
-						class="mt-12 h-[156px] w-[320px] md:mt-10 md:h-[302px] md:w-[635px] lg:mt-8 lg:h-[371px] lg:w-[800px]"
-					/>
+					<img src="./Screen_ee.png" class="mt-12 h-[156px] w-[320px] md:mt-10 md:h-[302px] md:w-[635px] lg:mt-8 lg:h-[371px] lg:w-[800px]" />
 				</div>
 			</div>
 		</section>
-		<section class="bg-[#e7e8f3] py-2 text-[#00023b] md:py-4 lg:py-8">
-			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="pb-4 text-center text-[12px] font-semibold leading-[26px] md:text-[14px]"
-				>
-					Trusted by
-				</h1>
-				<!-- <div class="flex hidden justify-center">
-					<ul class="flex space-x-4 overflow-x-auto">
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-						<li>
-							<img
-								src="https://fakeimg.pl/300/"
-								class="h-20 w-20 object-cover"
-							/>
-						</li>
-					</ul>
-				</div> -->
-				<ul
-					class="flex h-11 min-w-max items-center justify-center space-x-8 lg:h-16"
-				>
-					<li class="">
-						<img class="" src="./brands/arte.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/caritas.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/classpass.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/ironman.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/lmax-group.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/mercedes.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/nio.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/open-sense.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/orange.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/skoda.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/ubisoft.png" />
-					</li>
-					<li class="">
-						<img class="" src="./brands/overwolf.png" />
-					</li>
-				</ul>
+		<section class="bg-[#e7e8f3] text-[#00023b]">
+			<div class="mx-auto max-w-screen-xl pt-2 md:pt-4 lg:pt-8">
+				<h1 class="pb-4 text-center text-[12px] font-semibold leading-[26px] md:text-[14px]">Trusted by</h1>
+				<div class="relative">
+					<div class="lg:w-30 absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-[#e7e8f3] to-transparent md:w-20"></div>
+					<div class="lg:w-30 absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-[#e7e8f3] to-transparent md:w-20"></div>
+					<div class="overflow-x-scroll whitespace-nowrap pb-4 md:pb-8">
+						<ul class="flex flex-nowrap items-center justify-center gap-8">
+							<li class="flex-shrink-0">
+								<img src="./brands/arte.png" alt="Arte" class="h-[15px] w-[61px] lg:h-[22px] lg:w-[90px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/caritas.png" alt="Caritas" class="h-[40px] w-[42px] lg:h-[59px] lg:w-[62px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/classpass.png" alt="ClassPass" class="h-[36px] w-[66px] lg:h-[53px] lg:w-[96px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/ironman.png" alt="Ironman" class="h-[31px] w-[67px] lg:h-[45px] lg:w-[97px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/lmax-group.png" alt="LMAX Group" class="h-[21px] w-[66px] lg:h-[31px] lg:w-[96px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/mercedes.png" alt="Mercedes" class="h-[45px] w-[52px] lg:h-[65px] lg:w-[75px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/nio.png" alt="Nio" class="h-[31px] w-[76px] lg:h-[45px] lg:w-[111px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/open-sense.png" alt="Open Sense" class="h-[13px] w-[84px] lg:h-[19px] lg:w-[123px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/orange.png" alt="Orange" class="h-[36px] w-[36px] lg:h-[53px] lg:w-[53px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/skoda.png" alt="Skoda" class="h-[16px] w-[82px] lg:h-[23px] lg:w-[119px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/ubisoft.png" alt="Ubisoft" class="h-[39px] w-[53px] lg:h-[57px] lg:w-[77px]" />
+							</li>
+							<li class="flex-shrink-0">
+								<img src="./brands/overwolf.png" alt="Overwolf" class="h-[38px] w-[38px] lg:h-[55px] lg:w-[56px]" />
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section
-			class="bg-[#00023b] py-8 px-4 text-white md:py-16 md:px-12 lg:p-24"
-		>
+		<section class="bg-[#00023b] py-8 px-4 text-white md:py-16 md:px-12 lg:p-24">
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 md:text-[36px] md:leading-[44px] lg:mb-24 lg:text-[42px] lg:leading-[48px]"
-				>
+				<h1 class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 md:text-[36px] md:leading-[44px] lg:mb-24 lg:text-[42px] lg:leading-[48px]">
 					What's In The Package?
 				</h1>
 				<ul
 					class="columns-1 gap-16 space-y-8 text-[16px] font-light leading-[22px] md:columns-2 md:text-[18px] md:leading-[26px] lg:gap-24 lg:text-[21px] lg:leading-[28px]"
 				>
 					<li class="ml-14 break-inside-avoid-column">
-						<svg
-							aria-hidden="true"
-							class="absolute -ml-14 h-8 w-8"
-							fill="currentColor"
-						>
+						<svg aria-hidden="true" class="absolute -ml-14 h-8 w-8" fill="currentColor">
 							<path
 								d="M16 .5C24.563.5 31.5 7.438 31.5 16c0 8.563-6.938 15.5-15.5 15.5C7.437 31.5.5 24.562.5 16 .5 7.437 7.438.5 16 .5Zm-1.806 8.975L18.913 14H7.5c-.831 0-1.5.669-1.5 1.5v1c0 .831.669 1.5 1.5 1.5h11.413l-4.72 4.525a1.502 1.502 0 0 0-.024 2.144l.687.681a1.494 1.494 0 0 0 2.119 0l8.294-8.288a1.494 1.494 0 0 0 0-2.118l-8.294-8.3a1.494 1.494 0 0 0-2.119 0l-.687.681a1.51 1.51 0 0 0 .025 2.15Z"
 							/>
 						</svg>
 						Save weeks of development thanks to the
-						<b class="font-light text-[#1bceb9] md:font-semibold"
-							>Private Modules</b
-						>, valid on an unlimited number of domains and projects.
+						<b class="font-light text-[#1bceb9] md:font-semibold">Private Modules</b>, valid on an unlimited number of domains and projects.
 					</li>
 					<li class="ml-14 break-inside-avoid-column">
-						<svg
-							aria-hidden="true"
-							class="absolute -ml-14 h-8 w-8"
-							fill="currentColor"
-						>
+						<svg aria-hidden="true" class="absolute -ml-14 h-8 w-8" fill="currentColor">
 							<path
 								d="M16 .5C24.563.5 31.5 7.438 31.5 16c0 8.563-6.938 15.5-15.5 15.5C7.437 31.5.5 24.562.5 16 .5 7.437 7.438.5 16 .5Zm-1.806 8.975L18.913 14H7.5c-.831 0-1.5.669-1.5 1.5v1c0 .831.669 1.5 1.5 1.5h11.413l-4.72 4.525a1.502 1.502 0 0 0-.024 2.144l.687.681a1.494 1.494 0 0 0 2.119 0l8.294-8.288a1.494 1.494 0 0 0 0-2.118l-8.294-8.3a1.494 1.494 0 0 0-2.119 0l-.687.681a1.51 1.51 0 0 0 .025 2.15Z"
 							/>
 						</svg>
 						Get
 						<b class="font-light text-[#1bceb9] md:font-semibold">Support</b>
-						from experienced react and react-admin developers, who will help you
-						to find the right information and troubleshoot your bugs.
+						from experienced react and react-admin developers, who will help you to find the right information and troubleshoot your bugs.
 					</li>
 					<li class="ml-14 break-inside-avoid-column">
-						<svg
-							aria-hidden="true"
-							class="absolute -ml-14 h-8 w-8"
-							fill="currentColor"
-						>
+						<svg aria-hidden="true" class="absolute -ml-14 h-8 w-8" fill="currentColor">
 							<path
 								d="M16 .5C24.563.5 31.5 7.438 31.5 16c0 8.563-6.938 15.5-15.5 15.5C7.437 31.5.5 24.562.5 16 .5 7.437 7.438.5 16 .5Zm-1.806 8.975L18.913 14H7.5c-.831 0-1.5.669-1.5 1.5v1c0 .831.669 1.5 1.5 1.5h11.413l-4.72 4.525a1.502 1.502 0 0 0-.024 2.144l.687.681a1.494 1.494 0 0 0 2.119 0l8.294-8.288a1.494 1.494 0 0 0 0-2.118l-8.294-8.3a1.494 1.494 0 0 0-2.119 0l-.687.681a1.51 1.51 0 0 0 .025 2.15Z"
 							/>
 						</svg>
 						Get a
-						<b class="font-light text-[#1bceb9] md:font-semibold"
-							>50% Discount on Professional Services</b
-						>
-						in case you need coaching, audit, or custom development by our
-						experts.
+						<b class="font-light text-[#1bceb9] md:font-semibold">50% Discount on Professional Services</b>
+						in case you need coaching, audit, or custom development by our experts.
 					</li>
 					<li class="ml-14 break-inside-avoid-column">
-						<svg
-							aria-hidden="true"
-							class="absolute -ml-14 h-8 w-8"
-							fill="currentColor"
-						>
+						<svg aria-hidden="true" class="absolute -ml-14 h-8 w-8" fill="currentColor">
 							<path
 								d="M16 .5C24.563.5 31.5 7.438 31.5 16c0 8.563-6.938 15.5-15.5 15.5C7.437 31.5.5 24.562.5 16 .5 7.437 7.438.5 16 .5Zm-1.806 8.975L18.913 14H7.5c-.831 0-1.5.669-1.5 1.5v1c0 .831.669 1.5 1.5 1.5h11.413l-4.72 4.525a1.502 1.502 0 0 0-.024 2.144l.687.681a1.494 1.494 0 0 0 2.119 0l8.294-8.288a1.494 1.494 0 0 0 0-2.118l-8.294-8.3a1.494 1.494 0 0 0-2.119 0l-.687.681a1.51 1.51 0 0 0 .025 2.15Z"
 							/>
 						</svg>
 						Get access to exclusive
-						<b class="font-light text-[#1bceb9] md:font-semibold"
-							>Learning Material</b
-						>, including a Storybook full of examples, and a dedicated demo app.
+						<b class="font-light text-[#1bceb9] md:font-semibold">Learning Material</b>, including a Storybook full of examples, and a dedicated demo app.
 					</li>
 					<li class="ml-14 break-inside-avoid-column">
-						<svg
-							aria-hidden="true"
-							class="absolute -ml-14 h-8 w-8"
-							fill="currentColor"
-						>
+						<svg aria-hidden="true" class="absolute -ml-14 h-8 w-8" fill="currentColor">
 							<path
 								d="M16 .5C24.563.5 31.5 7.438 31.5 16c0 8.563-6.938 15.5-15.5 15.5C7.437 31.5.5 24.562.5 16 .5 7.437 7.438.5 16 .5Zm-1.806 8.975L18.913 14H7.5c-.831 0-1.5.669-1.5 1.5v1c0 .831.669 1.5 1.5 1.5h11.413l-4.72 4.525a1.502 1.502 0 0 0-.024 2.144l.687.681a1.494 1.494 0 0 0 2.119 0l8.294-8.288a1.494 1.494 0 0 0 0-2.118l-8.294-8.3a1.494 1.494 0 0 0-2.119 0l-.687.681a1.51 1.51 0 0 0 .025 2.15Z"
 							/>
 						</svg>
 						Prioritize your needs in the react-admin
-						<b class="font-light text-[#1bceb9] md:font-semibold"
-							>Development Roadmap</b
-						>
+						<b class="font-light text-[#1bceb9] md:font-semibold">Development Roadmap</b>
 						thanks to a priority vote.<br /><br />
 					</li>
 				</ul>
@@ -312,38 +254,23 @@
 			id="private-modules"
 		>
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[32px] font-bold leading-[38px] md:text-[36px] md:leading-[44px] lg:mb-10 lg:text-[42px] lg:leading-[48px]"
-				>
+				<h1 class="mb-8 text-center text-[32px] font-bold leading-[38px] md:text-[36px] md:leading-[44px] lg:mb-10 lg:text-[42px] lg:leading-[48px]">
 					Private modules
 				</h1>
-				<p
-					class="mb-12 text-center text-[18px] leading-[26px] md:mb-24 lg:text-[21px] lg:leading-[28px]"
-				>
+				<p class="mb-12 text-center text-[18px] leading-[26px] md:mb-24 lg:text-[21px] lg:leading-[28px]">
 					Designed for professional use cases, developed by Marmelab<br />
 					Check the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Storybook</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Storybook</a>
 					and the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Enterprise Edition Demo</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Enterprise Edition Demo</a>
 					for a preview of these modules.
 				</p>
 				<div class="flex flex-col space-y-16 md:flex-row">
-					<img
-						src="./rbac_module.png"
-						class="h-[221px] w-[321px] md:h-[277px] md:w-[400px] lg:h-[370px] lg:w-[535px]"
-					/>
+					<img src="./rbac_module.png" class="h-[221px] w-[321px] md:h-[277px] md:w-[400px] lg:h-[370px] lg:w-[535px]" />
 					<div>
 						<h2 class="mb-8 flex items-start justify-between">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-								>Role Based Access Control</span
-							>
-							<span
-								class="rounded-md bg-[#1bceb9] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px] lg:leading-[28px]"
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">Role Based Access Control</span>
+							<span class="rounded-md bg-[#1bceb9] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px] lg:leading-[28px]"
 								>New!</span
 							>
 						</h2>
@@ -352,13 +279,8 @@
 						>
 							<li>Low-level Role-Based Access Control primitives</li>
 							<li>Integrate a powerful permission system with your admin</li>
-							<li>
-								Restrict access to resources, records and fields depending on
-								user roles and permissions
-							</li>
-							<li>
-								Use alternative admin components with pre-set RBAC support
-							</li>
+							<li>Restrict access to resources, records and fields depending on user roles and permissions</li>
+							<li>Use alternative admin components with pre-set RBAC support</li>
 						</ul>
 					</div>
 				</div>
@@ -366,9 +288,7 @@
 		</section>
 		<section class="hidden bg-[#00023b] p-24 text-[#999bba] xl:block">
 			<div class="mx-auto max-w-screen-xl">
-				<h1 class="text-[32px] font-bold leading-[40px]">
-					(Changement animé du contenu au scroll)
-				</h1>
+				<h1 class="text-[32px] font-bold leading-[40px]">(Changement animé du contenu au scroll)</h1>
 			</div>
 		</section>
 		<section
@@ -380,38 +300,24 @@
 			"
 		>
 			<div class="mx-auto max-w-screen-xl">
-				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">
-					Private modules
-				</h1>
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">Private modules</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
 					Designed for professional use cases, developed by Marmelab<br />
 					Check the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Storybook</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Storybook</a>
 					and the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Enterprise Edition Demo</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Enterprise Edition Demo</a>
 					for a preview of these modules.
 				</p>
 				<div class="flex">
 					<div style="min-width: 535px; height: 370px">
-						<img
-							src="./ed_module.png"
-							alt=""
-							class="w-full object-cover object-center"
-						/>
+						<img src="./ed_module.png" alt="" class="w-full object-cover object-center" />
 					</div>
 					<div class="ml-16">
 						<h2 class="mb-8 flex justify-between">
-							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Editable Datagrid</span
-							>
+							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]">Editable Datagrid</span>
 						</h2>
-						<ul
-							class="ml-8 list-disc space-y-4 text-[21px] font-light leading-[28px]"
-						>
+						<ul class="ml-8 list-disc space-y-4 text-[21px] font-light leading-[28px]">
 							<li>Edit data directly in the list view</li>
 							<li>Add new rows straight from the list</li>
 							<li>Customize the forms, inputs and buttons</li>
@@ -424,9 +330,7 @@
 		</section>
 		<section class="hidden bg-[#00023b] p-24 text-[#999bba] xl:block">
 			<div class="mx-auto max-w-screen-xl">
-				<h1 class="text-[32px] font-bold leading-[40px]">
-					(Changement animé du contenu au scroll)
-				</h1>
+				<h1 class="text-[32px] font-bold leading-[40px]">(Changement animé du contenu au scroll)</h1>
 			</div>
 		</section>
 		<section
@@ -438,85 +342,48 @@
 			"
 		>
 			<div class="mx-auto max-w-screen-xl">
-				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">
-					Private modules
-				</h1>
+				<h1 class="mb-8 text-center text-[42px] font-bold leading-[48px]">Private modules</h1>
 				<p class="mb-24 text-center text-[21px] leading-[28px]">
 					Designed for professional use cases, developed by Marmelab<br />
 					Check the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Storybook</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Storybook</a>
 					and the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Enterprise Edition Demo</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Enterprise Edition Demo</a>
 					for a preview of these modules.
 				</p>
 				<div class="flex">
 					<div style="min-width: 535px; height: 370px">
-						<img
-							src="./fl_module.png"
-							alt=""
-							class="w-full object-cover object-center"
-						/>
+						<img src="./fl_module.png" alt="" class="w-full object-cover object-center" />
 					</div>
 					<div class="ml-16">
 						<h2 class="mb-8 flex justify-between">
-							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]"
-								>Form Layout</span
-							>
+							<span class="text-[32px] font-bold leading-[40px] text-[#1bceb9]">Form Layout</span>
 						</h2>
-						<ul
-							class="ml-8 list-disc space-y-4 text-[21px] font-light leading-[28px]"
-						>
+						<ul class="ml-8 list-disc space-y-4 text-[21px] font-light leading-[28px]">
 							<li>Build advanced forms with alternative layouts</li>
 							<li>Group inputs with accordion forms and sections</li>
 							<li>Offer step by step entry with wizard forms</li>
 							<li>Display a table of contents with long forms</li>
-							<li>
-								Open forms without leaving the current page with dialog forms
-							</li>
+							<li>Open forms without leaving the current page with dialog forms</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section
-			class="mt-[-36px] bg-[#00023b] py-8 px-4 text-white md:py-16 md:px-12 lg:p-24"
-		>
+		<section class="mt-[-36px] bg-[#00023b] py-8 px-4 text-white md:py-16 md:px-12 lg:p-24">
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 md:text-[36px] md:leading-[44px] lg:mb-24 lg:text-[42px] lg:leading-[46px]"
-				>
+				<h1 class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 md:text-[36px] md:leading-[44px] lg:mb-24 lg:text-[42px] lg:leading-[46px]">
 					And also
 				</h1>
-				<div
-					class="mb-8 columns-1 gap-24 space-y-16 md:mb-16 md:columns-2 md:space-y-24 lg:mb-24"
-				>
+				<div class="mb-8 columns-1 gap-24 space-y-16 md:mb-16 md:columns-2 md:space-y-24 lg:mb-24">
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-							>
-								<!-- <img src="/molecule.svg" class="mr-4 inline-block hidden" /> -->
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
-									<rect
-										width="8"
-										height="8"
-										stroke-width="2"
-										rx="2"
-										transform="matrix(0 1 1 0 20 20)"
-									/>
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">
+								
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
+									<rect width="8" height="8" stroke-width="2" rx="2" transform="matrix(0 1 1 0 20 20)" />
 									<path stroke-width="2" d="M8 4 4 9.333l4 5.333" />
-									<path
-										stroke-width="2"
-										d="M4 9.334h12c3.771 0 5.657 0 6.828 1.171C24 11.677 24 13.562 24 17.334V20"
-									/>
+									<path stroke-width="2" d="M4 9.334h12c3.771 0 5.657 0 6.828 1.171C24 11.677 24 13.562 24 17.334V20" />
 								</svg>
 								Navigation</span
 							>
@@ -527,22 +394,13 @@
 							<li>Organize numerous menu entries in a multi-level menu</li>
 							<li>Display nested resources inside a tree menu</li>
 							<li>Add a powerful breadcrumb component to your admin</li>
-							<li>
-								Present admins with a limited number of resources in a centered
-								container layout
-							</li>
+							<li>Present admins with a limited number of resources in a centered container layout</li>
 						</ul>
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-							>
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
 									<path
 										stroke-linecap="round"
 										stroke-width="2"
@@ -558,39 +416,20 @@
 							<li>Organize numerous menu entries in a multi-level menu</li>
 							<li>Display nested resources inside a tree menu</li>
 							<li>Add a powerful breadcrumb component to your admin</li>
-							<li>
-								Present admins with a limited number of resources in a centered
-								container layout
-							</li>
+							<li>Present admins with a limited number of resources in a centered container layout</li>
 						</ul>
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-							>
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
 									<path
 										stroke-linecap="round"
 										stroke-width="2"
 										d="M11 9h5m-5 11h4m-4-5h8m6-.444V9c0-2.828 0-4.243-.879-5.121C23.243 3 21.828 3 19 3h-8c-2.828 0-4.243 0-5.121.879C5 4.757 5 6.172 5 9v14c0 2.828 0 4.243.879 5.121C6.757 29 8.172 29 11 29h4"
 									/>
-									<circle
-										cx="23"
-										cy="24"
-										r="4"
-										stroke-linecap="round"
-										stroke-width="2"
-									/>
-									<path
-										stroke-linecap="round"
-										stroke-width="2"
-										d="m28 29-2-2"
-									/>
+									<circle cx="23" cy="24" r="4" stroke-linecap="round" stroke-width="2" />
+									<path stroke-linecap="round" stroke-width="2" d="m28 29-2-2" />
 								</svg>
 								Audit Log</span
 							>
@@ -601,22 +440,13 @@
 							<li>Organize numerous menu entries in a multi-level menu</li>
 							<li>Display nested resources inside a tree menu</li>
 							<li>Add a powerful breadcrumb component to your admin</li>
-							<li>
-								Present admins with a limited number of resources in a centered
-								container layout
-							</li>
+							<li>Present admins with a limited number of resources in a centered container layout</li>
 						</ul>
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-							>
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
 									<path
 										stroke-width="2"
 										d="M12 18v4.667c0 .942 0 1.414-.293 1.707-.293.293-.764.293-1.707.293H7.333c-.942 0-1.414 0-1.707-.293-.293-.293-.293-.764-.293-1.707V20c0-.943 0-1.414.293-1.707C5.92 18 6.391 18 7.333 18H12Zm8-8V5.333c0-.942 0-1.414.293-1.707.293-.293.764-.293 1.707-.293h2.667c.942 0 1.414 0 1.707.293.293.293.293.765.293 1.707V8c0 .943 0 1.414-.293 1.707-.293.293-.764.293-1.707.293H20Zm0 0-8 8m8 4v4.667c0 .942 0 1.414.293 1.707.293.293.764.293 1.707.293h2.667c.942 0 1.414 0 1.707-.293.293-.293.293-.764.293-1.707V24c0-.943 0-1.414-.293-1.707C26.08 22 25.61 22 24.667 22H20Zm-8-8V9.333c0-.942 0-1.414-.293-1.707-.293-.293-.764-.293-1.707-.293H7.333c-.942 0-1.414 0-1.707.293-.293.293-.293.765-.293 1.707V12c0 .943 0 1.414.293 1.707.293.293.765.293 1.707.293H12Zm0 0 8 8"
@@ -631,36 +461,19 @@
 							<li>Visualize and edit complex relationships</li>
 							<li>One-to-many relationships</li>
 							<li>Many-to-many relationships</li>
-							<li>
-								Choose multiple values from a list of references with a dual
-								list input
-							</li>
+							<li>Choose multiple values from a list of references with a dual list input</li>
 						</ul>
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]"
-							>
+							<span class="text-[28px] font-bold leading-[34px] text-[#1bceb9] lg:text-[32px] lg:leading-[40px]">
 								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8">
-									<rect
-										width="26"
-										height="22"
-										x="3"
-										y="7"
-										stroke="currentColor"
-										rx="2"
-									/>
+									<rect width="26" height="22" x="3" y="7" stroke="currentColor" rx="2" />
 									<path
 										fill="currentColor"
 										d="M3 11c0-1.886 0-2.828.586-3.414C4.172 7 5.114 7 7 7h18c1.886 0 2.828 0 3.414.586C29 8.172 29 9.114 29 11v2H3v-2Z"
 									/>
-									<path
-										stroke="currentColor"
-										stroke-linecap="round"
-										stroke-width="2"
-										d="M9 3v4m14-4v4"
-									/>
+									<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9 3v4m14-4v4" />
 								</svg>
 								Calendar</span
 							>
@@ -671,39 +484,23 @@
 							<li>Visualize and edit complex relationships</li>
 							<li>One-to-many relationships</li>
 							<li>Many-to-many relationships</li>
-							<li>
-								Choose multiple values from a list of references with a dual
-								list input
-							</li>
+							<li>Choose multiple values from a list of references with a dual list input</li>
 						</ul>
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#999bba] lg:text-[32px] lg:leading-[40px]"
-							>
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
+							<span class="text-[28px] font-bold leading-[34px] text-[#999bba] lg:text-[32px] lg:leading-[40px]">
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
 									<path
 										stroke-width="2"
 										d="M2 6c0-1.4 0-2.1.272-2.635a2.5 2.5 0 0 1 1.093-1.093C3.9 2 4.6 2 6 2h20c1.4 0 2.1 0 2.635.272a2.5 2.5 0 0 1 1.092 1.093C30 3.9 30 4.6 30 6v20c0 1.4 0 2.1-.273 2.635a2.5 2.5 0 0 1-1.092 1.092C28.1 30 27.4 30 26 30H6c-1.4 0-2.1 0-2.635-.273a2.5 2.5 0 0 1-1.093-1.092C2 28.1 2 27.4 2 26V6Z"
 									/>
 									<circle cx="10" cy="15" r="3" stroke-width="2" />
-									<path
-										stroke-linecap="round"
-										stroke-width="2"
-										d="M14 15h7.857M25 18v-2.85a.15.15 0 0 0-.15-.15h-2.993m0 0v3"
-									/>
+									<path stroke-linecap="round" stroke-width="2" d="M14 15h7.857M25 18v-2.85a.15.15 0 0 0-.15-.15h-2.993m0 0v3" />
 								</svg>
 								LDAP Auth</span
 							>
-							<span
-								class="rounded-md bg-[#999bba] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px]"
-								>Soon</span
-							>
+							<span class="rounded-md bg-[#999bba] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px]">Soon</span>
 						</h2>
 						<ul
 							class="ml-6 list-disc space-y-4 text-[18px] font-light leading-[26px] md:text-[16px] md:leading-[22px] lg:ml-8 lg:space-y-6 lg:text-[21px] lg:leading-[28px]"
@@ -713,90 +510,36 @@
 					</div>
 					<div class="break-inside-avoid-column">
 						<h2 class="mb-4 flex justify-between lg:mb-6">
-							<span
-								class="text-[28px] font-bold leading-[34px] text-[#999bba] lg:text-[32px] lg:leading-[40px]"
-							>
-								<svg
-									aria-hidden="true"
-									class="mr-2.5 inline-block h-8 w-8"
-									stroke="currentColor"
-								>
-									<rect
-										width="7"
-										height="7"
-										x="28"
-										y="11"
-										stroke-width="2"
-										rx="3.5"
-										transform="rotate(90 28 11)"
-									/>
-									<rect
-										width="7"
-										height="7"
-										x="28"
-										y="24"
-										stroke-width="2"
-										rx="3.5"
-										transform="rotate(90 28 24)"
-									/>
-									<rect
-										width="7"
-										height="7"
-										x="3"
-										y="8"
-										stroke-width="2"
-										rx="3.5"
-										transform="rotate(-90 3 8)"
-									/>
-									<path
-										stroke-width="2"
-										d="M6 9v15c0 1.886 0 2.828.586 3.414C7.172 28 8.114 28 10 28h11"
-									/>
-									<path
-										stroke-width="2"
-										d="M6 8v2c0 1.886 0 2.828.586 3.414C7.172 14 8.114 14 10 14h11"
-									/>
+							<span class="text-[28px] font-bold leading-[34px] text-[#999bba] lg:text-[32px] lg:leading-[40px]">
+								<svg aria-hidden="true" class="mr-2.5 inline-block h-8 w-8" stroke="currentColor">
+									<rect width="7" height="7" x="28" y="11" stroke-width="2" rx="3.5" transform="rotate(90 28 11)" />
+									<rect width="7" height="7" x="28" y="24" stroke-width="2" rx="3.5" transform="rotate(90 28 24)" />
+									<rect width="7" height="7" x="3" y="8" stroke-width="2" rx="3.5" transform="rotate(-90 3 8)" />
+									<path stroke-width="2" d="M6 9v15c0 1.886 0 2.828.586 3.414C7.172 28 8.114 28 10 28h11" />
+									<path stroke-width="2" d="M6 8v2c0 1.886 0 2.828.586 3.414C7.172 14 8.114 14 10 14h11" />
 								</svg>
 
 								Version</span
 							>
-							<span
-								class="rounded-md bg-[#999bba] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px]"
-								>Soon</span
-							>
+							<span class="rounded-md bg-[#999bba] px-2 py-0.5 text-[21px] font-bold uppercase leading-[28px] text-[#2e3062] lg:text-[28px]">Soon</span>
 						</h2>
 						<ul
 							class="ml-6 list-disc space-y-4 text-[18px] font-light leading-[26px] md:text-[16px] md:leading-[22px] lg:ml-8 lg:space-y-6 lg:text-[21px] lg:leading-[28px]"
 						>
-							<li>
-								Keep a history of versions for any resource, see changes in a
-								timeline, and revert to a previous version
-							</li>
+							<li>Keep a history of versions for any resource, see changes in a timeline, and revert to a previous version</li>
 						</ul>
 					</div>
 				</div>
-				<p
-					class="mb-10 text-[18px] font-light leading-[26px] md:text-[16px] md:leading-[22px] lg:text-[21px] lg:leading-[28px]"
-				>
-					Each of these modules offer React hooks and components, to ease the
-					integration with your UI. You get
-					<b class="font-bold">full access</b> to the
-					<b class="font-bold">source, source maps, and documentation</b> via a
-					private npm registry. Private modules follow the same
-					<b class="font-bold">quality standards</b> for code and documentation
-					as the open-source packages.
+				<p class="mb-10 text-[18px] font-light leading-[26px] md:text-[16px] md:leading-[22px] lg:text-[21px] lg:leading-[28px]">
+					Each of these modules offer React hooks and components, to ease the integration with your UI. You get
+					<b class="font-bold">full access</b> to the <b class="font-bold">source, source maps, and documentation</b> via a private npm registry. Private
+					modules follow the same <b class="font-bold">quality standards</b> for code and documentation as the open-source packages.
 				</p>
-				<ul
-					class="flex flex-col gap-4 text-[18px] font-semibold leading-[27px] text-[#1bceb9] md:flex-row md:gap-8"
-				>
+				<ul class="flex flex-col gap-4 text-[18px] font-semibold leading-[27px] text-[#1bceb9] md:flex-row md:gap-8">
 					<li>
 						<a class="hover:underline" href="#"
 							>Test in Storybook
-							<svg
-								aria-hidden="true"
-								class="ml-1 inline-block h-3.5 w-3.5"
-								fill="currentColor"
-							>
+							<svg aria-hidden="true" class="ml-1 inline-block h-3.5 w-3.5" fill="currentColor">
 								<path
 									d="M3.549 2.428v-1.12c0-.476.384-.86.856-.857L12.22.45c.475 0 .858.383.856.856v7.817a.853.853 0 0 1-.856.856h-1.121a.858.858 0 0 1-.856-.876l.144-3.942-7.257 7.258a.855.855 0 0 1-1.212 0l-.808-.808a.855.855 0 0 1 0-1.212L8.367 3.14l-3.942.144a.852.852 0 0 1-.876-.856Z"
 								/>
@@ -806,11 +549,7 @@
 					<li>
 						<a class="hover:underline" href="#"
 							>Test in e-commerce demo
-							<svg
-								aria-hidden="true"
-								class="ml-1 inline-block h-3.5 w-3.5"
-								fill="currentColor"
-							>
+							<svg aria-hidden="true" class="ml-1 inline-block h-3.5 w-3.5" fill="currentColor">
 								<path
 									d="M3.549 2.428v-1.12c0-.476.384-.86.856-.857L12.22.45c.475 0 .858.383.856.856v7.817a.853.853 0 0 1-.856.856h-1.121a.858.858 0 0 1-.856-.876l.144-3.942-7.257 7.258a.855.855 0 0 1-1.212 0l-.808-.808a.855.855 0 0 1 0-1.212L8.367 3.14l-3.942.144a.852.852 0 0 1-.876-.856Z"
 								/>
@@ -820,109 +559,63 @@
 				</ul>
 			</div>
 		</section>
-		<section
-			class="bg-[#e7e8f3] px-4 py-16 text-[#00023b] md:px-12 md:py-16 lg:p-24"
-		>
+		<section id="support" class="bg-[#e7e8f3] px-4 py-16 text-[#00023b] md:px-12 md:py-16 lg:p-24">
 			<div class="mx-auto mt-1 max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]"
-				>
-					Support
-				</h1>
-				<h2
-					class="mb-8 text-center text-[18px] font-light leading-[26px] text-[#2e3062] lg:text-[21px] lg:leading-[28px]"
-				>
+				<h1 class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]">Support</h1>
+				<h2 class="mb-8 text-center text-[18px] font-light leading-[26px] text-[#2e3062] lg:text-[21px] lg:leading-[28px]">
 					React-admin experts, ready to answer your questions
 				</h2>
 				<div class="rounded-xl bg-white p-8 md:p-12 lg:p-16">
 					<div class="grid grid-cols-1 gap-16 md:grid-cols-3">
 						<div class="text-center">
 							<img class="mb-8 inline-block" src="./support/s0.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
-								Covers both the Open-Source Edition modules and the Enterprise
-								Edition modules.
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+								Covers both the Open-Source Edition modules and the Enterprise Edition modules.
 							</p>
 						</div>
-						<div
-							class="text-center"
-							cl_ass="flex flex-col items-center space-y-8"
-						>
+						<div class="text-center" cl_ass="flex flex-col items-center space-y-8">
 							<img class="mb-8 inline-block p-1" src="./support/s1.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
-								Get help troubleshooting your installation and react-admin usage
-								problems.
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+								Get help troubleshooting your installation and react-admin usage problems.
 							</p>
 						</div>
-						<div
-							class="text-center"
-							cl_ass="flex flex-col items-center space-y-8"
-						>
+						<div class="text-center" cl_ass="flex flex-col items-center space-y-8">
 							<img class="mb-8 inline-block p-0.5" src="./support/s2.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
-								Get guidance to the right documentation for your use case among
-								a large corpus of tutorials, handbooks, and type declarations.
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+								Get guidance to the right documentation for your use case among a large corpus of tutorials, handbooks, and type declarations.
 							</p>
 						</div>
-						<div
-							class="text-center"
-							cl_ass="flex flex-col items-center space-y-8"
-						>
+						<div class="text-center" cl_ass="flex flex-col items-center space-y-8">
 							<img class="mb-8 inline-block p-2" src="./support/s3.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
-								Get code samples matching your need in existing examples and
-								StackOverflow answers
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+								Get code samples matching your need in existing examples and StackOverflow answers
 							</p>
 						</div>
-						<div
-							class="text-center"
-							cl_ass="flex flex-col items-center space-y-8"
-						>
+						<div class="text-center" cl_ass="flex flex-col items-center space-y-8">
 							<img class="mb-8 inline-block p-1.5" src="./support/s4.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
-								Determine if a bug in your admin comes from react-admin or your
-								code
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+								Determine if a bug in your admin comes from react-admin or your code
 							</p>
 						</div>
-						<div
-							class="text-center"
-							cl_ass="flex flex-col items-center space-y-8"
-						>
+						<div class="text-center" cl_ass="flex flex-col items-center space-y-8">
 							<img class="mb-8 inline-block" src="./support/s5.svg" />
-							<p
-								class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-							>
+							<p class="text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
 								Be notified when a react-admin bug that affects you gets fixed
 							</p>
 						</div>
 					</div>
-					<div
-						class="mt-16 rounded-lg border-2 border-[#e7e8f3] p-8 text-center text-[18px] font-light leading-[26px]"
-					>
+					<div class="mt-16 rounded-lg border-2 border-[#e7e8f3] p-8 text-center text-[18px] font-light leading-[26px]">
 						<p class="mb-2">
 							Support is done by email at
-							<a class="underline" href="#"
-								>support@react-admin-enterprise-edition.zendesk.com</a
-							>.
+							<a class="underline" href="#">support@react-admin-enterprise-edition.zendesk.com</a>.
 						</p>
-						<p>
-							Phone support is proposed as an option to Corporate Plan
-							subscribers.
-						</p>
+						<p>Phone support is proposed as an option to Corporate Plan subscribers.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section
+			id="pricing"
 			class="bg-[#2e3062] px-4 pb-8 pt-36 text-white md:pb-16 md:pt-56 lg:px-16 lg:pb-24 lg:pt-64"
 			style="
 				background-image: url('group_4.svg'), url('ellipse_5.svg');
@@ -931,52 +624,27 @@
 			"
 		>
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]"
-				>
-					Plans & Pricing
-				</h1>
-				<p
-					class="text-center text-[18px] leading-[26px] lg:mb-24 lg:text-[21px] lg:leading-[28px]"
-				>
+				<h1 class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]">Plans & Pricing</h1>
+				<p class="text-center text-[18px] leading-[26px] lg:mb-24 lg:text-[21px] lg:leading-[28px]">
 					Designed for professional use cases, developed by Marmelab<br />
 					Check the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Storybook</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Storybook</a>
 					and the
-					<a class="font-semibold underline hover:no-underline" href="#"
-						>Enterprise Edition Demo</a
-					>
+					<a class="font-semibold underline hover:no-underline" href="#">Enterprise Edition Demo</a>
 					for a preview of these modules.
 				</p>
-				<div
-					class="isolate mx-0 mt-16 grid grid-cols-1 gap-4 px-0 md:grid-cols-3 md:px-8 lg:gap-8"
-				>
+				<div class="isolate mx-0 mt-16 grid grid-cols-1 gap-4 px-0 md:grid-cols-3 md:px-8 lg:gap-8">
 					<div class="flex flex-col justify-between rounded-xl bg-[#e7e8f3]">
 						<div>
-							<div
-								class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:px-12 lg:px-0"
-							>
+							<div class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:px-12 lg:px-0">
 								<div class="flex justify-center gap-4">
 									<img src="./plans/team.svg" class="h-10 w-10" />
-									<h2
-										class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]"
-									>
-										Team
-									</h2>
+									<h2 class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]">Team</h2>
 								</div>
-								<h3
-									class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]"
-								>
-									Great for one or two devs
-								</h3>
+								<h3 class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]">Great for one or two devs</h3>
 							</div>
 							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
-								<span
-									class="text-[28px] font-bold leading-[40px] lg:text-[32px]"
-									>135€ / month</span
-								><br /><span class="text-[21px] font-bold leading-[32px]"
+								<span class="text-[28px] font-bold leading-[40px] lg:text-[32px]">135€ / month</span><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
@@ -991,9 +659,7 @@
 								<li>50% discount on professional services</li>
 							</ul>
 						</div>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14"
-						>
+						<div class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14">
 							<a
 								href="#"
 								class="inline-block rounded-full bg-[#1bceb9] px-6 py-4 text-center text-[18px] font-semibold leading-[27px] text-[#00023b] lg:px-12 lg:py-6 lg:text-[21px] lg:leading-[31.5px]"
@@ -1003,28 +669,15 @@
 					</div>
 					<div class="flex flex-col justify-between rounded-xl bg-[#e7e8f3]">
 						<div>
-							<div
-								class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:-mt-8 md:py-11 md:px-12 lg:px-0"
-							>
+							<div class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:-mt-8 md:py-11 md:px-12 lg:px-0">
 								<div class="flex justify-center gap-4">
 									<img src="./plans/business.svg" class="h-10 w-10" />
-									<h2
-										class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]"
-									>
-										Business
-									</h2>
+									<h2 class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]">Business</h2>
 								</div>
-								<h3
-									class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]"
-								>
-									For medium businesses
-								</h3>
+								<h3 class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]">For medium businesses</h3>
 							</div>
 							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
-								<span
-									class="text-[28px] font-bold leading-[40px] lg:text-[32px]"
-									>270€ / month</span
-								><br /><span class="text-[21px] font-bold leading-[32px]"
+								<span class="text-[28px] font-bold leading-[40px] lg:text-[32px]">270€ / month</span><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
@@ -1039,9 +692,7 @@
 								<li>50% discount on professional services</li>
 							</ul>
 						</div>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14"
-						>
+						<div class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14">
 							<a
 								href="#"
 								class="inline-block rounded-full bg-[#1bceb9] px-6 py-4 text-center text-[18px] font-semibold leading-[27px] text-[#00023b] lg:px-12 lg:py-6 lg:text-[21px] lg:leading-[31.5px]"
@@ -1051,28 +702,15 @@
 					</div>
 					<div class="flex flex-col justify-between rounded-xl bg-[#e7e8f3]">
 						<div>
-							<div
-								class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:px-12 lg:px-0"
-							>
+							<div class="rounded-xl rounded-b-none bg-[#00023b] py-7 px-20 md:px-12 lg:px-0">
 								<div class="flex justify-center gap-4">
 									<img src="./plans/corporate.svg" class="h-10 w-10" />
-									<h2
-										class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]"
-									>
-										Corporate
-									</h2>
+									<h2 class="mb-0 text-[28px] font-bold leading-[36px] lg:mb-4 lg:text-[32px] lg:leading-[40px]">Corporate</h2>
 								</div>
-								<h3
-									class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]"
-								>
-									Adapted to large companies
-								</h3>
+								<h3 class="text-center text-[18px] font-light leading-[26px] lg:text-[21px] lg:leading-[28px]">Adapted to large companies</h3>
 							</div>
 							<div class="mb-8 p-7 pb-0 text-center text-[#00023b]">
-								<span
-									class="text-[28px] font-bold leading-[40px] lg:text-[32px]"
-									>540€ / month</span
-								><br /><span class="text-[21px] font-bold leading-[32px]"
+								<span class="text-[28px] font-bold leading-[40px] lg:text-[32px]">540€ / month</span><br /><span class="text-[21px] font-bold leading-[32px]"
 									>billed annually</span
 								>
 							</div>
@@ -1088,9 +726,7 @@
 								<li>Support by phone (optional)</li>
 							</ul>
 						</div>
-						<div
-							class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14"
-						>
+						<div class="rounded-xl rounded-t-none bg-[#e7e8f3] p-8 text-center md:pt-14">
 							<a
 								href="#"
 								class="inline-block rounded-full bg-[#1bceb9] px-6 py-4 text-center text-[18px] font-semibold leading-[27px] text-[#00023b] lg:px-12 lg:py-6 lg:text-[21px] lg:leading-[31.5px]"
@@ -1101,276 +737,168 @@
 				</div>
 			</div>
 		</section>
-		<section
-			class="bg-[#e7e8f3] px-4 py-8 text-[#00023b] md:px-12 md:py-16 lg:p-24"
-		>
+		<section id="professional-services" class="bg-[#e7e8f3] px-4 py-8 text-[#00023b] md:px-12 md:py-16 lg:p-24">
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]"
-				>
-					Professional Services
-				</h1>
-				<h2
-					class="mb-8 text-center text-[18px] font-light leading-[26px] text-[#2e3062] lg:text-[21px] lg:leading-[28px]"
-				>
+				<h1 class="mb-8 text-center text-[36px] font-bold leading-[44px] lg:text-[42px] lg:leading-[46px]">Professional Services</h1>
+				<h2 class="mb-8 text-center text-[18px] font-light leading-[26px] text-[#2e3062] lg:text-[21px] lg:leading-[28px]">
 					Custom react-admin services, paid by the day
 				</h2>
 				<div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-16">
 					<div class="rounded-xl bg-white p-8 text-center">
 						<img class="inline-flex h-40 w-40" src="./services/developer.svg" />
-						<p
-							class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-						>
-							Whether you need help to develop a component for your admin, an
-							audit of your code, personal training about react-admin, our
-							senior expert developers are available at 1,500€ per day.
+						<p class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+							Whether you need help to develop a component for your admin, an audit of your code, personal training about react-admin, our senior expert
+							developers are available at 1,500€ per day.
 						</p>
 					</div>
 					<div class="rounded-xl bg-white p-8 text-center">
 						<img class="inline-flex h-40 w-40" src="./services/offer.svg" />
-						<p
-							class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-						>
-							Subscribing to the Enterprise Edition gives a 50% discount on that
-							price, so Professional Services only cost 750€ per day.
+						<p class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+							Subscribing to the Enterprise Edition gives a 50% discount on that price, so Professional Services only cost 750€ per day.
 						</p>
 					</div>
 					<div class="rounded-xl bg-white p-8 text-center">
-						<img
-							class="inline-flex h-40 w-40"
-							src="./services/landing-page.svg"
-						/>
-						<p
-							class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]"
-						>
-							Professional Services experts are all part of the react-admin core
-							team and take part in the development of the Open-source and
-							Enterprise editions. Their speed and experience will save you days
-							of development, if not weeks.
+						<img class="inline-flex h-40 w-40" src="./services/landing-page.svg" />
+						<p class="mt-8 text-[16px] font-light leading-[22px] lg:text-[18px] lg:leading-[26px]">
+							Professional Services experts are all part of the react-admin core team and take part in the development of the Open-source and Enterprise
+							editions. Their speed and experience will save you days of development, if not weeks.
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section
-			class="bg-[#2e3062] px-4 py-8 pb-8 text-white md:py-16 md:px-12 lg:p-24"
-		>
+		<section class="bg-[#2e3062] px-4 py-8 pb-8 text-white md:py-16 md:px-12 lg:p-24">
 			<div class="mx-auto max-w-screen-xl">
-				<h1
-					class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 lg:text-[42px] lg:leading-[46px]"
-				>
-					Frequently asked questions
-				</h1>
+				<h1 class="mb-8 text-center text-[32px] font-bold leading-[38px] md:mb-16 lg:text-[42px] lg:leading-[46px]">Frequently asked questions</h1>
 				<div class="rounded-lg bg-[#00023b] p-4 py-8 md:p-16">
 					<dl class="columns-1 gap-16 space-y-12 md:columns-2 lg:mb-8">
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								What is the minimum commitment period?
-							</dt>
-							<dd class="text-[18px] font-light leading-[26px]">
-								One month. You can cancel at any time.
-							</dd>
+							<dt class="text-[24px] font-bold leading-[28px]">What is the minimum commitment period?</dt>
+							<dd class="text-[18px] font-light leading-[26px]">One month. You can cancel at any time.</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								Can I pay by bank transfer instead of a credit card?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">Can I pay by bank transfer instead of a credit card?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
 								Sure!
-								<a class="font-semibold underline hover:no-underline" href="#"
-									>Contact us</a
-								>
+								<a class="font-semibold underline hover:no-underline" href="#">Contact us</a>
 								so we can arrange the payment.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								Do you offer a free trial version?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">Do you offer a free trial version?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
 								No, we don't. We consider
-								<a class="font-semibold underline hover:no-underline" href="#"
-									>the open-source edition of react-admin</a
-								>
-								as way to showcase the general quality of the code and
-								documentation that we provide. If you enjoy react-admin, you
-								will love React-Admin Enterprise Edition! You can test some of
-								the Enterprise Edition modules in the
-								<a class="font-semibold underline hover:no-underline" href="#"
-									>Enterprise Demo</a
-								>. And if you just want to test one module, simply subscribe and
-								cancel your subscription immediately. You will only be billed
-								for a month.
+								<a class="font-semibold underline hover:no-underline" href="#">the open-source edition of react-admin</a>
+								as way to showcase the general quality of the code and documentation that we provide. If you enjoy react-admin, you will love React-Admin
+								Enterprise Edition! You can test some of the Enterprise Edition modules in the
+								<a class="font-semibold underline hover:no-underline" href="#">Enterprise Demo</a>. And if you just want to test one module, simply subscribe
+								and cancel your subscription immediately. You will only be billed for a month.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								How do I access the private modules?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">How do I access the private modules?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								Once subscribed, you will receive credentials to download the
-								Enterprise Edition modules from a private npm registry. You can
-								also use these credentials in a CI server.
+								Once subscribed, you will receive credentials to download the Enterprise Edition modules from a private npm registry. You can also use these
+								credentials in a CI server.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								How often do you release new features?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">How often do you release new features?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								Almost every week! Each module documentation has a changelog
-								that you can check for details (see e.g.
-								<a class="font-semibold underline hover:no-underline" href="#"
-									>the ra-preferences changelog</a
-								>). Also, we plan to release several new modules per year.
+								Almost every week! Each module documentation has a changelog that you can check for details (see e.g.
+								<a class="font-semibold underline hover:no-underline" href="#">the ra-preferences changelog</a>). Also, we plan to release several new modules
+								per year.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								What happens if I cancel my subscription?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">What happens if I cancel my subscription?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								For your apps already in production: Nothing! You will be able
-								to continue using the code you already developed with the
-								private modules for as long as you like.<br />
-								However, you won't receive any updates, you will lose access to
-								the private npm registry where the modules are published, you
-								will lose access to support, and to the 50% discount on
-								coaching.
+								For your apps already in production: Nothing! You will be able to continue using the code you already developed with the private modules for as
+								long as you like.<br />
+								However, you won't receive any updates, you will lose access to the private npm registry where the modules are published, you will lose access
+								to support, and to the 50% discount on coaching.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								What does the number of developers mean?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">What does the number of developers mean?</dt>
+							<dd class="text-[18px] font-light leading-[26px]">That's the total number of developers using react-admin Enterprise Edition in your team.</dd>
+						</div>
+						<div class="break-inside-avoid-column space-y-6">
+							<dt class="text-[24px] font-bold leading-[28px]">Can I use React-admin for client projects?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								That's the total number of developers using react-admin
-								Enterprise Edition in your team.
+								Yes, you can! And if you cancel your subscription, your client can still use the latest version of the private modules at the time your
+								subscription expires. The module license only prevents you from creating competing derivative products.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								Can I use React-admin for client projects?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">Do you sell modules individually?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								Yes, you can! And if you cancel your subscription, your client
-								can still use the latest version of the private modules at the
-								time your subscription expires. The module license only prevents
-								you from creating competing derivative products.
+								No, we don't. When you subscribe to one of our plans, you get access to all our actuals and future private modules. If you only need one module,
+								consider how much it would cost you to redevelop it, and you'll find that it's always cheaper to subscribe!
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								Do you sell modules individually?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">Do you sell only support?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
-								No, we don't. When you subscribe to one of our plans, you get
-								access to all our actuals and future private modules. If you
-								only need one module, consider how much it would cost you to
-								redevelop it, and you'll find that it's always cheaper to
-								subscribe!
+								No, we only sell a package including both the private modules and the support. However, if you need ad hoc development, check out the
+								Professional Services that we offer.
 							</dd>
 						</div>
 						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								Do you sell only support?
-							</dt>
-							<dd class="text-[18px] font-light leading-[26px]">
-								No, we only sell a package including both the private modules
-								and the support. However, if you need ad hoc development, check
-								out the Professional Services that we offer.
-							</dd>
-						</div>
-						<div class="break-inside-avoid-column space-y-6">
-							<dt class="text-[24px] font-bold leading-[28px]">
-								How can I setup a CI or deploy on Heroku/Vercel/etc?
-							</dt>
+							<dt class="text-[24px] font-bold leading-[28px]">How can I setup a CI or deploy on Heroku/Vercel/etc?</dt>
 							<dd class="text-[18px] font-light leading-[26px]">
 								You'll have to include an
-								<code class="rounded bg-[#2e3062] p-1">.npmrc</code> file in
-								your repository with the following content:
-								<pre
-									class="my-6 overflow-x-auto rounded bg-[#2e3062] p-4"
-								><code>//registry.marmelab.com/:_authToken=${NPM_TOKEN}
+								<code class="rounded bg-[#2e3062] p-1">.npmrc</code> file in your repository with the following content:
+								<pre class="my-6 overflow-x-auto rounded bg-[#2e3062] p-4"><code>//registry.marmelab.com/:_authToken=${NPM_TOKEN}
 @react-admin:registry=https://registry.marmelab.com
 </code></pre>
 								Then use your service mechanisms to provide the
 								<code class="rounded bg-[#2e3062] p-1">NPM_TOKEN</code>
-								environment variable. You can use your own token as its value,
-								which can be found in your root .npmrcfile once you sign in.
-								This file is located at
+								environment variable. You can use your own token as its value, which can be found in your root .npmrcfile once you sign in. This file is located
+								at
 								<code class="rounded bg-[#2e3062] p-1">$HOME/.npmrc</code>
 							</dd>
 						</div>
 					</dl>
 					<div class="mt-16 text-center md:mt-20">
-						<h2 class="mb-4 text-[32px] font-bold leading-[40px]">
-							I have another question
-						</h2>
+						<h2 class="mb-4 text-[32px] font-bold leading-[40px]">I have another question</h2>
 						<p class="text-[21px] font-light leading-[28px]">
 							Feel free to
-							<a
-								class="font-semibold underline hover:no-underline"
-								href="mailto:react-admin-ee@marmelab.com"
-								>contact us</a
-							>!
+							<a class="font-semibold underline hover:no-underline" href="mailto:react-admin-ee@marmelab.com">contact us</a>!
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer class="bg-[#00023b] px-4 py-0 text-white md:px-12 lg:px-24 lg:py-8">
+		<footer class="bg-[#00023b] text-white">
 			<div
-				class="lg:py-22 mx-auto flex max-w-screen-xl flex-col items-start justify-between py-8 text-[18px] font-light leading-[26px] md:flex-row md:items-end md:py-16"
+				class="lg:py-22 mx-auto flex max-w-screen-xl flex-col items-start justify-between px-4 py-8 text-[18px] font-light leading-[26px] md:flex-row md:items-end md:px-12 md:py-16 lg:px-24 lg:py-8"
 			>
-				<div
-					class="order-2 mt-8 flex flex-col justify-center space-y-8 md:mt-0 md:flex-row md:space-x-16"
-				>
-					<a
-						href="mailto:react-admin-ee@marmelab.com"
-						class="underline hover:no-underline"
-						>Contact</a
-					>
-					<a
-						href="https://marmelab.com/fr/legal"
-						class="underline hover:no-underline"
-						>Legal</a
-					>
-					<a
-						href="https://marmelab.com/ra-enterprise/assets/MARMELAB_Services_Terms_2022_11_22.pdf"
-						class="underline hover:no-underline"
-						>Terms & Conditions</a
-					>
+				<div class="order-2 mt-8 flex flex-col justify-center gap-8 md:mt-0 md:flex-row md:gap-16">
+					<a href="mailto:react-admin-ee@marmelab.com" class="underline hover:no-underline">Contact</a>
+					<a href="https://marmelab.com/fr/legal" class="underline hover:no-underline">Legal</a>
+					<a href="https://marmelab.com/ra-enterprise/assets/MARMELAB_Services_Terms_2022_11_22.pdf" class="underline hover:no-underline">Terms & Conditions</a>
 				</div>
 				<div class="order-1">
 					<img src="./marmelab.png" class="pb-4" />
 					Copyright
-					<a href="https://marmelab.com/" class="underline hover:no-underline"
-						>Marmelab</a
-					>
+					<a href="https://marmelab.com/" class="underline hover:no-underline">Marmelab</a>
 				</div>
 			</div>
 		</footer>
-		<!-- <div class="absolute top-0 opacity-30">
-			<img
-				class="max-[1439px]:hidden min-[1441px]:hidden"
-				src="/figma_ee_1440.png"
-			/>
-			<img
-				class="max-[1279px]:hidden min-[1281px]:hidden"
-				src="/figma_ee_1280.png"
-			/>
-			<img
-				class="max-[959px]:hidden min-[961px]:hidden"
-				src="/figma_ee_960.png"
-			/>
-			<img
-				class="max-[359px]:hidden min-[361px]:hidden"
-				src="/figma_ee_360.png"
-			/>
-		</div> -->
+		<!--
+
+		<div class="absolute top-0 opacity-40">
+			<img class="max-[1439px]:hidden min-[1441px]:hidden" src="/figma_ee_1440.png" />
+			<img class="max-[1279px]:hidden min-[1281px]:hidden" src="/figma_ee_1280.png" />
+			<img class="max-[959px]:hidden min-[961px]:hidden" src="/figma_ee_960.png" />
+			<img class="max-[359px]:hidden min-[361px]:hidden" src="/figma_ee_360.png" />
+		</div>
+		-->
+
 		<!--
 			<img class="absolute top-0 opacity-50" src="/figma_ee_1.png" />
-			<script type="module" src="./src/enterprise.ts"></script>
-		--></body>
+		-->
+		
+	</body>
 </html>
